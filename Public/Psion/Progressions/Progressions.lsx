@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+<version major="4" minor="0" revision="9" build="328" />
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression"> Psion Level 1
+                    <attribute id="AllowImprovement" type="bool" value="false" />
+                    <attribute id="Boosts" type="LSString" value="ActionResource(PsionSpellSlot,4,1);ActionResource(PsiPointsResource,2,0);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(SimpleWeapons);Proficiency(LightArmor)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Psion" />
+                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(9deea502-bdaa-4462-b22b-d345d6dd3957,2);SelectSpells(b10535d8-1650-45cb-9308-842403b654b0,2,0,,,,AlwaysPrepared);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,,AlwaysPrepared)" />
+					<attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                    <attribute id="UUID" type="guid" value="77f4a196-3ae9-4d6f-a4e5-63ed4db7ac54" />
+					<!-- <children>
+                        <node id="SubClasses"> @TODO: Add appropriate subclasses
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="[SUBCLASSUUID]" /> Avatar
+                                </node>
+                            </children>
+                        </node>
+                    </children> -->
+                </node>
+                <node id="Progression"> Psion Multiclass
+                    <attribute id="AllowImprovement" type="bool" value="false" />
+                    <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,2,0)" />
+                    <attribute id="IsMulticlass" type="bool" value="true" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Psion" />
+                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(b10535d8-1650-45cb-9308-842403b654b0,2,0,,,,AlwaysPrepared);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,,AlwaysPrepared)" />
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectPassives(48317e03-fe2a-4767-8f4d-1bdc2a40ac65,1,PsionicDisciplines);SelectSpells(b10535d8-1650-45cb-9308-842403b654b0,2,0,PsionicTalents,,,AlwaysPrepared);" /> -->
+                    <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                    <attribute id="UUID" type="guid" value="60c46460-e719-4f3f-975a-fd6c4cb0365e" />
+                    <!-- <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="[SUBCLASSUUID]" /> Avatar
+                                </node>
+                            </children>
+                        </node>
+                    </children> -->
+                </node>
+                <node id="Progression"> Psion Level 2
+                        <attribute id="AllowImprovement" type="bool" value="false" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0)" />
+                        <attribute id="Level" type="uint8" value="2" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <!-- <attribute id="PassivesAdded" type="LSString" value="Passive_Mystic_MysticalRecovery" /> -->
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,1,0,,,,AlwaysPrepared)" /> -->
+                        <!-- <attribute id="Selectors" type="LSString" value="SelectPassives([@MTUUID],1,MysticTalents);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,,AlwaysPrepared)" /> -->
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="77c4191f-b10f-4a34-ae70-c82defd64134" />
+                    </node>
+                <node id="Progression"> Psion Level 3
+                        <attribute id="AllowImprovement" type="bool" value="false" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsionSpellSlot,4,2);ActionResource(PsiPointsResource,1,0);ActionResource(MentalLimitResource,255,2);" />
+                        <attribute id="Level" type="uint8" value="3" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <!-- <attribute id="PassivesAdded" type="LSString" value="Psion_MentalLimit_2" /> -->
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,,AlwaysPrepared)" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="8fc08d29-918e-4d98-b927-5219967f8a63" />
+                </node>
+                <node id="Progression"> Psion Level 4
+                        <attribute id="AllowImprovement" type="bool" value="true" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0)" />
+                        <attribute id="Level" type="uint8" value="4" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <attribute id="PassivesAdded" type="LSString" value="" />
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="AddSpells(6dc0e475-1f9b-4965-8af4-39cacb022285)" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="91b43fc5-b6d1-4e99-9e98-4a47cd56f09e" />
+                </node>
+                <node id="Progression"> Psion Level 5
+                        <attribute id="AllowImprovement" type="bool" value="false" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0);ActionResource(MentalLimitResource,255,3)" />
+                        <attribute id="Level" type="uint8" value="5" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <!-- <attribute id="PassivesAdded" type="LSString" value="Psion_MentalLimit_3" /> -->
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="79b630c2-4a92-418e-9a0e-3b6f3395d2d4" />
+                </node>
+                <node id="Progression"> Psion Level 6
+                        <attribute id="AllowImprovement" type="bool" value="false" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0)" />
+                        <attribute id="Level" type="uint8" value="6" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <attribute id="PassivesAdded" type="LSString" value="" />
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="0a649bf5-3da6-4793-aba0-e050c6235de2" />
+                </node>
+                <node id="Progression"> Psion Level 7
+                        <attribute id="AllowImprovement" type="bool" value="false" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0);ActionResource(MentalLimitResource,255,4)" />
+                        <attribute id="Level" type="uint8" value="7" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <!-- <attribute id="PassivesAdded" type="LSString" value="Psion_MentalLimit_4" /> -->
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="7a09f760-e2dc-460b-a4fb-ab2d2324fc31" />
+                </node>
+                <node id="Progression"> Psion Level 8
+                        <attribute id="AllowImprovement" type="bool" value="true" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0)" />
+                        <attribute id="Level" type="uint8" value="8" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <attribute id="PassivesAdded" type="LSString" value="" />
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="17704170-5dce-4a65-a205-0f9710470a58" />
+                </node>
+                <node id="Progression"> Psion Level 9
+                        <attribute id="AllowImprovement" type="bool" value="false" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0);ActionResource(MentalLimitResource,255,5)" />
+                        <attribute id="Level" type="uint8" value="9" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <!-- <attribute id="PassivesAdded" type="LSString" value="Psion_MentalLimit_5" /> -->
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="567b0cc8-e8e9-45ca-a7e7-839411d73666" />
+                </node>
+                <node id="Progression"> Psion Level 10
+                        <attribute id="AllowImprovement" type="bool" value="false" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0)" />
+                        <attribute id="Level" type="uint8" value="10" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <attribute id="PassivesAdded" type="LSString" value="" />
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="07c8f4cd-5ff0-4a5b-91f7-d28ac9d6e040" />
+                </node>
+                <node id="Progression"> Psion Level 11
+                        <attribute id="AllowImprovement" type="bool" value="false" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0)" />
+                        <attribute id="Level" type="uint8" value="11" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <attribute id="PassivesAdded" type="LSString" value="Passive_Mystic_PsionicMastery" />
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="e72e1f37-f856-4d49-a17e-d2f667f7fad6" />
+                </node>
+                <node id="Progression"> Psion Level 12
+                        <attribute id="AllowImprovement" type="bool" value="true" />
+                        <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0)" />
+                        <attribute id="Level" type="uint8" value="12" />
+                        <attribute id="Name" type="LSString" value="Psion" />
+                        <attribute id="PassivesAdded" type="LSString" value="" />
+                        <attribute id="PassivesRemoved" type="LSString" value="" />
+                        <attribute id="ProgressionType" type="uint8" value="0" />
+                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+                        <attribute id="UUID" type="guid" value="26221d03-f7d2-49ae-a7d2-5aeaa385099a" />
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="Progressions">
+    <node id="root">
+      <children>
+        <node id="Progression"> Mainclass Level 1
+                    <attribute id="AllowImprovement" type="bool" value="false" /> 
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Charisma);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);Proficiency(LightArmor)" /> 
+                    <attribute id="Level" type="uint8" value="1" /> 
+                    <attribute id="Name" type="LSString" value="Psion" /> 
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(PASSIVE_LIST_UUID,1);SelectSkills(SKILL_LIST_UUID,3);SelectSpells(SPELL_LIST_UUID,3,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,4,0)" /> 
+					<attribute id="TableUUID" type="guid" value="bfffeb63-bbb5-494f-a314-535503d38375" /> Same UUID as ClassDescriptions.lsx 
+                    <attribute id="UUID" type="guid" value="fefa32cb-ac2f-4a31-8f6c-e64d8e0c6314" /> 
+                </node>
+      </children>
+    </node>
+  </region>
+</save> -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="SpellLists">
+    <node id="root">
+      <children>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Psion Cantrips" />
+          <attribute id="Spells" type="LSString" value="Shout_BladeWard;Target_Friends;Target_Guidance;Target_Light;Target_MageHand;Target_MagicStone;Target_MindSliver;Target_MinorIllusion;Target_SpareTheDying;Shout_SwordBurst;Shout_Thaumaturgy;Target_TollTheDead;Target_TrueStrike" /> @TODO: Add Mind Thrust, Psionic Strike (maybe as a passive ability instead)
+          <attribute id="UUID" type="guid" value="b10535d8-1650-45cb-9308-842403b654b0" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Psion Spells" />
+          <attribute id="Spells" type="LSString" value="Projectile_Psion_MagicMissile;Projectile_Psion_ChromaticOrb;Target_Psion_Jump;Target_Psion_Moonbeam;Target_Psion_MistyStep" /> @TODO: Add Spells
+          <attribute id="UUID" type="guid" value="3d81d2f7-e498-402a-9e05-1ec90f408041" />
+        </node>
+      </children>
+    </node>
+  </region>
+</save>

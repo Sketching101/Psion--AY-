@@ -1,0 +1,26 @@
+new entry "Target_Psion_Jump"
+type "PassiveData"
+using "Target_Jump"
+data "UseCosts" "ActionPoint:1;PsiPointsResource:1"
+
+new entry "Target_Psion_MistyStep"
+type "PassiveData"
+using "Target_MistyStep"
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:2;MentalLimitResource:1:2"
+
+new entry "Target_Psion_Moonbeam"
+type "PassiveData"
+using "Target_Moonbeam"
+data "UseCosts" "MentalLimitResource:1:2"
+data "Boosts" "UnlockSpellVariant(ModifyUseCosts(Add,PsiPointsResource,SpellPowerLevel,0);ModifyUseCosts(Replace,SpellSlot,0,0,PsionSpellSlot))"
+
+new entry "Projectile_Psion_MagicMissile"
+type "PassiveData"
+using "Projectile_MagicMissile"
+data "UseCosts" "ActionPoint:1;PsiPointsResource:1"
+data "Boosts" "UnlockSpellVariant(ModifyUseCosts(Add,PsiPointsResource,SpellPowerLevel,0);ModifyUseCosts(Replace,SpellSlot,0,0,PsionSpellSlot))"
+
+new entry "Projectile_Psion_ChromaticOrb"
+type "PassiveData"
+using "Projectile_ChromaticOrb"
+data "Boosts" "UnlockSpellVariant(ModifyUseCosts(Add,PsiPointsResource,SpellPowerLevel,0);ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot))"

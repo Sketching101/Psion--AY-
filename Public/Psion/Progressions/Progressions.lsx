@@ -9,7 +9,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(PsionSpellSlot,4,1);ActionResource(PsiPointsResource,2,0);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(SimpleWeapons);Proficiency(LightArmor)" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Psion" />
-                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesAdded" type="LSString" value="Psion_PsiPointCost" />
                     <attribute id="PassivesRemoved" type="LSString" value="" />
                     <attribute id="ProgressionType" type="uint8" value="0" />
                     <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(9deea502-bdaa-4462-b22b-d345d6dd3957,2);SelectSpells(b10535d8-1650-45cb-9308-842403b654b0,2,0,,,,AlwaysPrepared);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,,AlwaysPrepared)" />
@@ -27,11 +27,11 @@
                 </node>
                 <node id="Progression"> Psion Multiclass
                     <attribute id="AllowImprovement" type="bool" value="false" />
-                    <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,2,0)" />
+                    <attribute id="Boosts" type="LSString" value="ActionResource(PsionSpellSlot,4,1);ActionResource(PsiPointsResource,2,0)" />
                     <attribute id="IsMulticlass" type="bool" value="true" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Psion" />
-                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesAdded" type="LSString" value="Psion_PsiPointCost" />
                     <attribute id="PassivesRemoved" type="LSString" value="" />
                     <attribute id="ProgressionType" type="uint8" value="0" />
                     <attribute id="Selectors" type="LSString" value="SelectSpells(b10535d8-1650-45cb-9308-842403b654b0,2,0,,,,AlwaysPrepared);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,,AlwaysPrepared)" />

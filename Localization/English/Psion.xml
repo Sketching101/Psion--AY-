@@ -6,4 +6,6 @@
 	<content contentuid="hb9807d77g87c5g4511ga3dcg59e911baedf1" version="1">Psi Points are spent to cast spells, equal to the spell's level.</content>
 	<content contentuid="h04c9011cgc5e6g41fcgaa0fg0a941bfe895e" version="1">Mental Limit</content>
 	<content contentuid="h13cf3603g28b7g474ag8895g67274f66b919" version="1">Determines the highest level spell you can cast using your Psi Points.</content>
+	<content contentuid="h465c7c80g8c66g4489gb557g936b84841143" version="1">Psionic Magic</content>
+	<content contentuid="h6ea4dde0g063bg4dd6g9b02gc1b1202624e3" version="1">You can cast spells using Psi points.</content>
 </contentList>

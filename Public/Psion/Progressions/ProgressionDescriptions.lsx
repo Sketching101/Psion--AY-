@@ -11,6 +11,14 @@
             <attribute id="SelectorId" type="FixedString" value="Psion" />
             <attribute id="UUID" type="guid" value="2912a38d-59c7-41da-a7f6-ebe96dab0bec" />
         </node>
+        <!-- <node id="ProgressionDescription">
+            <attribute id="Hidden" type="bool" value="true"/>
+            <attribute id="DisplayName" type="TranslatedString" handle="h465c7c80g8c66g4489gb557g936b84841143" version="1" />
+            <attribute id="Description" type="TranslatedString" handle="h6ea4dde0g063bg4dd6g9b02gc1b1202624e3" version="1" />
+            <attribute id="PassivePrototype" type="FixedString" value="Psion_PsiPointCost"/>
+            <attribute id="Type" type="FixedString" value="UnlockSpellVariant"/>
+            <attribute id="UUID" type="guid" value="9a35c5fd-b165-4f99-af45-d255dc3d5d0f"/>
+        </node> -->
       </children>
     </node>
   </region>

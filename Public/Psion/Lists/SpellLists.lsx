@@ -11,7 +11,7 @@
         </node>
         <node id="SpellList">
           <attribute id="Comment" type="LSString" value="Psion Spells" />
-          <attribute id="Spells" type="LSString" value="Projectile_Psion_MagicMissile;Projectile_Psion_ChromaticOrb;Target_Psion_Jump;Target_Psion_Moonbeam;Target_Psion_MistyStep" /> @TODO: Add Spells
+          <attribute id="Spells" type="LSString" value="Target_ProtectionFromPoison;Target_Shatter;Target_SpikeGrowth;Shout_ArmorOfAgathys;Target_Bane;Target_BeastBond;Target_Bless;Projectile_MagicMissile;Projectile_ChromaticOrb;Target_Jump;Target_Moonbeam;Target_MistyStep" /> @TODO: Add Spells
           <attribute id="UUID" type="guid" value="3d81d2f7-e498-402a-9e05-1ec90f408041" />
         </node>
       </children>

@@ -1,68 +1,68 @@
-new entry "Target_Psion_Jump"
-type "SpellData"
-using "Target_Jump"
-data "UseCosts" "ActionPoint:1;PsiPointsResource:1"
-
-new entry "Target_Psion_MistyStep"
-type "SpellData"
-using "Target_MistyStep"
-data "UseCosts" "BonusActionPoint:1;PsiPointsResource:2;MentalLimitResource:1:2"
-
-new entry "Target_Psion_Moonbeam"
-type "SpellData"
-using "Target_Moonbeam"
-data "UseCosts" "MentalLimitResource:1:2"
-
-new entry "Projectile_Psion_ChromaticOrb"
-type "SpellData"
-using "Projectile_ChromaticOrb"
-data "UseCosts" "ActionPoint:1;PsiPointsResource:1"
-
-
-
-
-// Magic Missile Upcast Test
-
-new entry "Projectile_Psion_MagicMissile"
-type "SpellData"
-using "Projectile_MagicMissile"
-
-new entry "Projectile_Psion_MagicMissile_1"
-type "SpellData"
-using "Projectile_Psion_MagicMissile"
-data "AmountOfTargets" "3"
-data "RootSpellID" "Projectile_Psion_MagicMissile"
-data "PowerLevel" "1"
-data "UseCosts" "ActionPoint:1;PsiPointsResource:1"
-
-new entry "Projectile_Psion_MagicMissile_2"
-type "SpellData"
-using "Projectile_Psion_MagicMissile"
-data "AmountOfTargets" "4"
-data "RootSpellID" "Projectile_Psion_MagicMissile"
-data "PowerLevel" "2"
-data "UseCosts" "ActionPoint:1;PsiPointsResource:2"
-
-new entry "Projectile_Psion_MagicMissile_3"
-type "SpellData"
-using "Projectile_Psion_MagicMissile"
-data "AmountOfTargets" "5"
-data "RootSpellID" "Projectile_Psion_MagicMissile"
-data "PowerLevel" "3"
-data "UseCosts" "ActionPoint:1;PsiPointsResource:3"
-
-new entry "Projectile_Psion_MagicMissile_4"
-type "SpellData"
-using "Projectile_Psion_MagicMissile"
-data "AmountOfTargets" "6"
-data "RootSpellID" "Projectile_Psion_MagicMissile"
-data "PowerLevel" "4"
-data "UseCosts" "ActionPoint:1;PsiPointsResource:4"
-
-new entry "Projectile_Psion_MagicMissile_5"
-type "SpellData"
-using "Projectile_Psion_MagicMissile"
-data "AmountOfTargets" "7"
-data "RootSpellID" "Projectile_Psion_MagicMissile"
-data "PowerLevel" "5"
-data "UseCosts" "ActionPoint:1;PsiPointsResource:5"
+// new entry "Target_Psion_Jump"
+// type "SpellData"
+// using "Target_Jump"
+// data "UseCosts" "ActionPoint:1;PsiPointsResource:1"
+// 
+// new entry "Target_Psion_MistyStep"
+// type "SpellData"
+// using "Target_MistyStep"
+// data "UseCosts" "BonusActionPoint:1;PsiPointsResource:2;MentalLimitResource:1:2"
+// 
+// new entry "Target_Psion_Moonbeam"
+// type "SpellData"
+// using "Target_Moonbeam"
+// data "UseCosts" "MentalLimitResource:1:2"
+// 
+// new entry "Projectile_Psion_ChromaticOrb"
+// type "SpellData"
+// using "Projectile_ChromaticOrb"
+// data "UseCosts" "ActionPoint:1;PsiPointsResource:1"
+// 
+// 
+// 
+// 
+// // Magic Missile Upcast Test
+// 
+// new entry "Projectile_Psion_MagicMissile"
+// type "SpellData"
+// using "Projectile_MagicMissile"
+// 
+// new entry "Projectile_Psion_MagicMissile_1"
+// type "SpellData"
+// using "Projectile_Psion_MagicMissile"
+// data "AmountOfTargets" "3"
+// data "RootSpellID" "Projectile_Psion_MagicMissile"
+// data "PowerLevel" "1"
+// data "UseCosts" "ActionPoint:1;PsiPointsResource:1"
+// 
+// new entry "Projectile_Psion_MagicMissile_2"
+// type "SpellData"
+// using "Projectile_Psion_MagicMissile"
+// data "AmountOfTargets" "4"
+// data "RootSpellID" "Projectile_Psion_MagicMissile"
+// data "PowerLevel" "2"
+// data "UseCosts" "ActionPoint:1;PsiPointsResource:2"
+// 
+// new entry "Projectile_Psion_MagicMissile_3"
+// type "SpellData"
+// using "Projectile_Psion_MagicMissile"
+// data "AmountOfTargets" "5"
+// data "RootSpellID" "Projectile_Psion_MagicMissile"
+// data "PowerLevel" "3"
+// data "UseCosts" "ActionPoint:1;PsiPointsResource:3"
+// 
+// new entry "Projectile_Psion_MagicMissile_4"
+// type "SpellData"
+// using "Projectile_Psion_MagicMissile"
+// data "AmountOfTargets" "6"
+// data "RootSpellID" "Projectile_Psion_MagicMissile"
+// data "PowerLevel" "4"
+// data "UseCosts" "ActionPoint:1;PsiPointsResource:4"
+// 
+// new entry "Projectile_Psion_MagicMissile_5"
+// type "SpellData"
+// using "Projectile_Psion_MagicMissile"
+// data "AmountOfTargets" "7"
+// data "RootSpellID" "Projectile_Psion_MagicMissile"
+// data "PowerLevel" "5"
+// data "UseCosts" "ActionPoint:1;PsiPointsResource:5"

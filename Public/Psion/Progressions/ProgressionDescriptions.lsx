@@ -11,6 +11,13 @@
             <attribute id="SelectorId" type="FixedString" value="Psion" />
             <attribute id="UUID" type="guid" value="2912a38d-59c7-41da-a7f6-ebe96dab0bec" />
         </node>
+        <node id="ProgressionDescription">
+            <attribute id="Description" type="TranslatedString" handle="ha19a73c4g4b00g46fdg9a7bgadd98745bd85" version="1" />
+            <attribute id="DisplayName" type="TranslatedString" handle="h6402c176g93a7g4a96gaa7cgf0ecfdb01116" version="1" />
+            <attribute id="ProgressionTableId" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
+            <attribute id="SelectorId" type="FixedString" value="MysticTalents" />
+            <attribute id="UUID" type="guid" value="13c7b539-8c85-4bb1-b003-fd072c5e861c" />
+        </node>
         <!-- <node id="ProgressionDescription">
             <attribute id="Hidden" type="bool" value="true"/>
             <attribute id="DisplayName" type="TranslatedString" handle="h465c7c80g8c66g4489gb557g936b84841143" version="1" />

@@ -8,4 +8,14 @@
 	<content contentuid="h13cf3603g28b7g474ag8895g67274f66b919" version="1">Determines the highest level spell you can cast using your Psi Points.</content>
 	<content contentuid="h465c7c80g8c66g4489gb557g936b84841143" version="1">Psionic Magic</content>
 	<content contentuid="h6ea4dde0g063bg4dd6g9b02gc1b1202624e3" version="1">You can cast spells using Psi points.</content>
+	<content contentuid="hf5c35c61g8923g4b5eg9602g9ab55547f461" version="1">Celerity I</content>
+	<content contentuid="hf34c447egacddg4070gb8cag25e99274c653" version="1">Your walking speed increases by 3 meters, and you can take the Dash action as a bonus action on your turn.</content>
+	<content contentuid="h2baed13ag0e32g4c76g8653gc01679bbb27c" version="1">Celerity II</content>
+	<content contentuid="hf206caa7g6b17g480cga8fbg137457ec4dee" version="1">Prerequisite: 5th level Psion, Celerity I - Your walking speed increases by another 5 feet, and when you Dash, opportunity attacks against you have disadvantage.</content>
+	<content contentuid="h61ff6853gdf77g4ff3g88a4gb94e95901c9c" version="1">Celerity III</content>
+	<content contentuid="hdc5b73a0gc0a6g4f27gba65g96c28a85e908" version="1">Prerequisite: 11th level Psion, Celerity I, II - Your walking speed increases by an additional 5 feet. Also, when you Dash, you ignore the effects of all difficult terrain, and you can move along vertical surfaces and across liquids without falling during your movement on that turn.</content>
+	<content contentuid="ha602d29ag0a28g46acgbe39gd28bf5336af0" version="1">Celerity IV</content>
+	<content contentuid="hda58dc03g9f45g434ega45fgba80e4f29995" version="1">Prerequisite: 16th level Psion, Celerity I, II, III - When you make a Dexterity saving throw to take only half damage from a spell or effect, you instead take no damage if you succeed on the save, and only half damage if you fail. Also, when you make a Dexterity check or saving throw, you can use your Intelligence score, in place of Dexterity.</content>
+	<content contentuid="h6402c176g93a7g4a96gaa7cgf0ecfdb01116" version="1">Mystic Talents</content>
+	<content contentuid="ha19a73c4g4b00g46fdg9a7bgadd98745bd85" version="1">Below are the Mystic Talents available to a Psion. If a Talent has a prerequisite, like your Psion level or another Talent, you can learn it at the same time you meet the prerequisites. If a Talent allows you to learn a cantrip, it doesn't count against your total number of Cantrips Known. If you already know that cantrip you learn a Psion cantrip of your choice.</content>
 </contentList>

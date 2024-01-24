@@ -21,10 +21,14 @@
 // Celerity II (Req: Level 5 & Celerity I)
     new entry "CelerityII"
     type "PassiveData"
-    data "DisplayName" "[HANDLECelerityII]"
-    data "Description" "[HANDLECelerityIIDesc]"
+    data "DisplayName" "h2baed13ag0e32g4c76g8653gc01679bbb27c"
+    data "Description" "hf206caa7g6b17g480cga8fbg137457ec4dee"
     data "Icon" "Spell_Transmutation_Haste"
-    data "Passives" "CelerityIISpeed;CelerityIIDash"
+    data "Boosts" "ActionResource(Movement, +1.5, 0);"
+    data "Properties" "OncePerTurn"
+    data "StatsFunctorContext" "OnCast"
+    data "Conditions" "SpellCategoryIs(SpellCategory.Dash) and Combat()"
+    data "StatsFunctors" "ApplyStatus(SELF, DodgeUntilEndTurn, 100, 1)"
 
     new entry "CelerityIISpeed"
     type "PassiveData"
@@ -39,10 +43,21 @@
     data "StatsFunctors" "ApplyStatus(SELF, DodgeUntilEndTurn, 100, 1)"
 
 // Celerity III (Req: Level 11 & Celerity II)
+    new entry "CelerityIII"
+    type "PassiveData"
+    data "DisplayName" "h61ff6853gdf77g4ff3g88a4gb94e95901c9c"
+    data "Description" "hdc5b73a0gc0a6g4f27gba65g96c28a85e908"
+    data "Icon" "Spell_Transmutation_Haste"
+    data "Boosts" "ActionResource(Movement, +1.5, 0);"
+    data "Properties" "OncePerTurn"
+    data "StatsFunctorContext" "OnCast"
+    data "Conditions" "SpellCategoryIs(SpellCategory.Dash) and Combat()"
+    data "StatsFunctors" "ApplyStatus(SELF, AvoidDifficultTerrain, 100, 1);"
+
     new entry "CelerityIIISpeed"
     type "PassiveData"
-    data "DisplayName" "[HANDLECelerityIII]"
-    data "Description" "[HANDLECelerityIIIDesc]"
+    data "DisplayName" "h61ff6853gdf77g4ff3g88a4gb94e95901c9c"
+    data "Description" "hdc5b73a0gc0a6g4f27gba65g96c28a85e908"
     data "Icon" "Spell_Transmutation_Haste"
     data "Boosts" "ActionResource(Movement, +1.5, 0);"
 
@@ -55,9 +70,9 @@
 
 data "Passives" "Evasion"
 // Celerity IV (Req: Level 16 & Celerity III)
-    new entry "CelerityIIISpeed"
+    new entry "CelerityIV"
     type "PassiveData"
-    data "DisplayName" "[HANDLECelerityIV]"
-    data "Description" "[HANDLECelerityIVDesc]"
+    data "DisplayName" "ha602d29ag0a28g46acgbe39gd28bf5336af0"
+    data "Description" "hda58dc03g9f45g434ega45fgba80e4f29995"
     data "Icon" "PassiveFeature_Evasion"
     data "Boosts" "AreaDamageEvade();RollBonus(RawAbility,max(0,IntelligenceModifier-DexterityModifier),Dexterity);RollBonus(RawAbility,max(0,IntelligenceModifier-DexterityModifier),Dexterity);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),Acrobatics);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),SleightOfHand);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),Stealth);RollBonus(SavingThrow,max(0,IntelligenceModifier-DexterityModifier),Dexterity)"

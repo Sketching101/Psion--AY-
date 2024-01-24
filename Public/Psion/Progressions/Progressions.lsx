@@ -35,7 +35,6 @@
                     <attribute id="PassivesRemoved" type="LSString" value="" />
                     <attribute id="ProgressionType" type="uint8" value="0" />
                     <attribute id="Selectors" type="LSString" value="SelectSpells(b10535d8-1650-45cb-9308-842403b654b0,2,0,,,,AlwaysPrepared);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
-                    <!-- <attribute id="Selectors" type="LSString" value="SelectPassives(48317e03-fe2a-4767-8f4d-1bdc2a40ac65,1,PsionicDisciplines);SelectSpells(b10535d8-1650-45cb-9308-842403b654b0,2,0,PsionicTalents,,,AlwaysPrepared);" /> -->
                     <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                     <attribute id="UUID" type="guid" value="60c46460-e719-4f3f-975a-fd6c4cb0365e" />
                     <!-- <children>
@@ -56,7 +55,7 @@
                         <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="SelectPassives([@MTUUID],1,MysticTalents);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
+                        <attribute id="Selectors" type="LSString" value="SelectPassives(012b4efb-2568-4b49-9351-617df1a00f93,2,MysticTalents);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="77c4191f-b10f-4a34-ae70-c82defd64134" />
                     </node>

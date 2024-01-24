@@ -10,9 +10,34 @@
           <attribute id="UUID" type="guid" value="b10535d8-1650-45cb-9308-842403b654b0" />
         </node>
         <node id="SpellList">
-          <attribute id="Comment" type="LSString" value="Psion Spells" />
-          <attribute id="Spells" type="LSString" value="Target_ProtectionFromPoison;Target_Shatter;Target_SpikeGrowth;Shout_ArmorOfAgathys;Target_Bane;Target_BeastBond;Target_Bless;Projectile_MagicMissile;Projectile_ChromaticOrb;Target_Jump;Target_Moonbeam;Target_MistyStep" /> @TODO: Add Spells
+          <attribute id="Comment" type="LSString" value="Psion Spells 1st" />
+          <attribute id="Spells" type="LSString" value="Throw_Catapult;Target_CauseFear;Target_CharmPerson;Target_Command_Container;Shout_DetectMagic;Shout_DisguiseSelf;Target_DissonantWhispers;Shout_ExpeditiousRetreat;Target_FaerieFire;Target_HideousLaughter;Target_Jump;Target_Longstrider;Projectile_MagicMissile;Shout_Shield_Wizard;Target_Sleep;Target_UnseenServant;" /> 
           <attribute id="UUID" type="guid" value="3d81d2f7-e498-402a-9e05-1ec90f408041" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Psion Spells 2nd" />
+          <attribute id="Spells" type="LSString" value="Target_Blindness;Shout_Blur;Target_CalmEmotions;Target_CrownOfMadness;Target_CrownOfMadness;Shout_DetectThoughts;Target_EnlargeReduce;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Target_TashasMindWhip;Shout_MirrorImage;Target_MistyStep;Target_PhantasmalForce;Shout_SeeInvisibility;Throw_Catapult;Target_CauseFear;Target_CharmPerson;Target_Command_Container;Shout_DetectMagic;Shout_DisguiseSelf;Target_DissonantWhispers;Shout_ExpeditiousRetreat;Target_FaerieFire;Target_HideousLaughter;Target_Jump;Target_Longstrider;Projectile_MagicMissile;Shout_Shield_Wizard;Target_Sleep;Target_UnseenServant;" /> 
+          <attribute id="UUID" type="guid" value="47dcc361-ea0d-4df6-a126-71ff0d3c120b" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Psion Spells 3rd" />
+          <attribute id="Spells" type="LSString" value="Shout_Blink;Target_Catnap;Target_EnemiesAbound;Zone_Fear;Target_FeignDeath;Target_Fly;Target_Haste;Target_HypnoticPattern;Target_IntellectFortress;Target_LifeTransference;Target_Nondetection;Target_Slow;Shout_WaterWalk;Target_Blindness;Shout_Blur;Target_CalmEmotions;Target_CrownOfMadness;Target_CrownOfMadness;Shout_DetectThoughts;Target_EnlargeReduce;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Target_TashasMindWhip;Shout_MirrorImage;Target_MistyStep;Target_PhantasmalForce;Shout_SeeInvisibility;Throw_Catapult;Target_CauseFear;Target_CharmPerson;Target_Command_Container;Shout_DetectMagic;Shout_DisguiseSelf;Target_DissonantWhispers;Shout_ExpeditiousRetreat;Target_FaerieFire;Target_HideousLaughter;Target_Jump;Target_Longstrider;Projectile_MagicMissile;Shout_Shield_Wizard;Target_Sleep;Target_UnseenServant;" /> 
+          <attribute id="UUID" type="guid" value="0d2a96e0-3f4b-45f2-90f0-bb9c8bd585bc" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Psion Spells 4th" />
+          <attribute id="Spells" type="LSString" value="Target_ArcaneEye;Target_CharmMonster;Target_Confusion;Teleportation_DimensionDoor;Target_FreedomOfMovement;Target_Invisibility_Greater;Target_PhantasmalKiller;Projectile_RaulothimsPsychicLance;Target_ResilientSphere;Shout_Blink;Target_Catnap;Target_EnemiesAbound;Zone_Fear;Target_FeignDeath;Target_Fly;Target_Haste;Target_HypnoticPattern;Target_IntellectFortress;Target_LifeTransference;Target_Nondetection;Target_Slow;Shout_WaterWalk;Target_Blindness;Shout_Blur;Target_CalmEmotions;Target_CrownOfMadness;Target_CrownOfMadness;Shout_DetectThoughts;Target_EnlargeReduce;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Target_TashasMindWhip;Shout_MirrorImage;Target_MistyStep;Target_PhantasmalForce;Shout_SeeInvisibility;Throw_Catapult;Target_CauseFear;Target_CharmPerson;Target_Command_Container;Shout_DetectMagic;Shout_DisguiseSelf;Target_DissonantWhispers;Shout_ExpeditiousRetreat;Target_FaerieFire;Target_HideousLaughter;Target_Jump;Target_Longstrider;Projectile_MagicMissile;Shout_Shield_Wizard;Target_Sleep;Target_UnseenServant;" /> 
+          <attribute id="UUID" type="guid" value="571d13c5-bef9-46b7-8316-626f9ed43d0b" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Psion Spells 5th" />
+          <attribute id="Spells" type="LSString" value="Target_DominatePerson;Target_FarStep;Target_HoldMonster;Target_Seeming;Target_SkillEmpowerment;Target_SynapticStatic;Throw_Telekinesis;Target_ArcaneEye;Target_CharmMonster;Target_Confusion;Teleportation_DimensionDoor;Target_FreedomOfMovement;Target_Invisibility_Greater;Target_PhantasmalKiller;Projectile_RaulothimsPsychicLance;Target_ResilientSphere;Shout_Blink;Target_Catnap;Target_EnemiesAbound;Zone_Fear;Target_FeignDeath;Target_Fly;Target_Haste;Target_HypnoticPattern;Target_IntellectFortress;Target_LifeTransference;Target_Nondetection;Target_Slow;Shout_WaterWalk;Target_Blindness;Shout_Blur;Target_CalmEmotions;Target_CrownOfMadness;Target_CrownOfMadness;Shout_DetectThoughts;Target_EnlargeReduce;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Target_TashasMindWhip;Shout_MirrorImage;Target_MistyStep;Target_PhantasmalForce;Shout_SeeInvisibility;Throw_Catapult;Target_CauseFear;Target_CharmPerson;Target_Command_Container;Shout_DetectMagic;Shout_DisguiseSelf;Target_DissonantWhispers;Shout_ExpeditiousRetreat;Target_FaerieFire;Target_HideousLaughter;Target_Jump;Target_Longstrider;Projectile_MagicMissile;Shout_Shield_Wizard;Target_Sleep;Target_UnseenServant;" /> 
+          <attribute id="UUID" type="guid" value="8a13f7df-8aef-4762-91c9-1aa87e77bc80" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Psion Spells 6th" />
+          <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Target_Eyebite;Target_GlobeOfInvulnerability;Target_IrresistibleDance" /> 
+          <attribute id="UUID" type="guid" value="8d057c74-fdf3-4ca3-b162-92db86c2dd45" />
         </node>
       </children>
     </node>

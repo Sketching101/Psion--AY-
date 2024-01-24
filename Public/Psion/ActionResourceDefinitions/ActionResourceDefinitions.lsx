@@ -31,7 +31,7 @@
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
                     <attribute id="UUID" type="guid" value="b667277c-98b8-46ad-9556-f0838c7e1c02"/>
-                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="true"/>
                 </node>
         <!-- <node id="ActionResourceDefinition"> Template
                     <attribute id="Description" type="TranslatedString" handle="[TBA]" version="1" />

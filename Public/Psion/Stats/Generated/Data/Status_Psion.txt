@@ -1,0 +1,21 @@
+// Celerity II (Req: Level 5 & Celerity I)
+
+    // Celerity II Impose Disadvantage
+    new entry "DodgeUntilEndTurn"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "TickType" "EndTurn"
+    data "Icon" "Spell_Illusion_Blur"
+    data "Boosts" "Disadvantage(AttackTarget)"
+    data "StatusGroups" "SG_RemoveOnRespec"
+
+// Celerity III (Req: Level 11 & Celerity II)
+
+    // Celerity III Avoid Difficult Terrain
+    new entry "AvoidDifficultTerrain"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "TickType" "EndTurn"
+    data "Icon" "Spell_Transmutation_WaterWalk"
+    data "Boosts" "StatusImmunity(SG_DifficultTerrain);StatusImmunity(SHOCKED_SURFACE);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_SEWER);StatusImmunity(ACID);StatusImmunity(ALCH_TOXIN_BASIC_CONDITION)"
+    data "StatusGroups" "SG_RemoveOnRespec"

@@ -8,4 +8,6 @@
 	<content contentuid="h13cf3603g28b7g474ag8895g67274f66b919" version="1">Determines the highest level spell you can cast using your Psi Points.</content>
 	<content contentuid="h465c7c80g8c66g4489gb557g936b84841143" version="1">Psionic Magic</content>
 	<content contentuid="h6ea4dde0g063bg4dd6g9b02gc1b1202624e3" version="1">You can cast spells using Psi points.</content>
+	<content contentuid="hf5c35c61g8923g4b5eg9602g9ab55547f461" version="1">Celerity I</content>
+	<content contentuid="hf34c447egacddg4070gb8cag25e99274c653" version="1">Your walking speed increases by 3 meters, and you can take the Dash action as a bonus action on your turn.</content>
 </contentList>

@@ -53,11 +53,10 @@
                         <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0)" />
                         <attribute id="Level" type="uint8" value="2" />
                         <attribute id="Name" type="LSString" value="Psion" />
-                        <!-- <attribute id="PassivesAdded" type="LSString" value="Passive_Mystic_MysticalRecovery" /> -->
+                        <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
-                        <!-- <attribute id="Selectors" type="LSString" value="SelectPassives([@MTUUID],1,MysticTalents);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,,AlwaysPrepared)" /> -->
+                        <attribute id="Selectors" type="LSString" value="SelectPassives([@MTUUID],1,MysticTalents);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="77c4191f-b10f-4a34-ae70-c82defd64134" />
                     </node>
@@ -66,7 +65,7 @@
                         <attribute id="Boosts" type="LSString" value="ActionResource(PsionSpellSlot,1,2);ActionResource(PsiPointsResource,1,0);ActionResource(MentalLimitResource,255,2);" />
                         <attribute id="Level" type="uint8" value="3" />
                         <attribute id="Name" type="LSString" value="Psion" />
-                        <!-- <attribute id="PassivesAdded" type="LSString" value="Psion_MentalLimit_2" /> -->
+                        <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
                         <attribute id="Selectors" type="LSString" value="SelectSpells(47dcc361-ea0d-4df6-a126-71ff0d3c120b,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
@@ -81,7 +80,7 @@
                         <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(47dcc361-ea0d-4df6-a126-71ff0d3c120b,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="91b43fc5-b6d1-4e99-9e98-4a47cd56f09e" />
                 </node>
@@ -90,10 +89,10 @@
                         <attribute id="Boosts" type="LSString" value="ActionResource(PsionSpellSlot,1,3);ActionResource(PsiPointsResource,1,0);ActionResource(MentalLimitResource,255,3)" />
                         <attribute id="Level" type="uint8" value="5" />
                         <attribute id="Name" type="LSString" value="Psion" />
-                        <!-- <attribute id="PassivesAdded" type="LSString" value="Psion_MentalLimit_3" /> -->
+                        <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(0d2a96e0-3f4b-45f2-90f0-bb9c8bd585bc,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="79b630c2-4a92-418e-9a0e-3b6f3395d2d4" />
                 </node>
@@ -105,7 +104,7 @@
                         <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(0d2a96e0-3f4b-45f2-90f0-bb9c8bd585bc,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="0a649bf5-3da6-4793-aba0-e050c6235de2" />
                 </node>
@@ -114,10 +113,10 @@
                         <attribute id="Boosts" type="LSString" value="ActionResource(PsionSpellSlot,1,4);ActionResource(PsiPointsResource,1,0);ActionResource(MentalLimitResource,255,4)" />
                         <attribute id="Level" type="uint8" value="7" />
                         <attribute id="Name" type="LSString" value="Psion" />
-                        <!-- <attribute id="PassivesAdded" type="LSString" value="Psion_MentalLimit_4" /> -->
+                        <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(571d13c5-bef9-46b7-8316-626f9ed43d0b,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="7a09f760-e2dc-460b-a4fb-ab2d2324fc31" />
                 </node>
@@ -129,7 +128,7 @@
                         <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(571d13c5-bef9-46b7-8316-626f9ed43d0b,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="17704170-5dce-4a65-a205-0f9710470a58" />
                 </node>
@@ -138,10 +137,10 @@
                         <attribute id="Boosts" type="LSString" value="ActionResource(PsionSpellSlot,1,5);ActionResource(PsiPointsResource,1,0);ActionResource(MentalLimitResource,255,5)" />
                         <attribute id="Level" type="uint8" value="9" />
                         <attribute id="Name" type="LSString" value="Psion" />
-                        <!-- <attribute id="PassivesAdded" type="LSString" value="Psion_MentalLimit_5" /> -->
+                        <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(8a13f7df-8aef-4762-91c9-1aa87e77bc80,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="567b0cc8-e8e9-45ca-a7e7-839411d73666" />
                 </node>
@@ -153,7 +152,7 @@
                         <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(8a13f7df-8aef-4762-91c9-1aa87e77bc80,0,1,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="07c8f4cd-5ff0-4a5b-91f7-d28ac9d6e040" />
                 </node>
@@ -165,7 +164,7 @@
                         <attribute id="PassivesAdded" type="LSString" value="Passive_Mystic_PsionicMastery" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(e6ccab5e-3b3b-4b34-8fa2-1058dff2b3e6,1,0,MysticArcanum,,None,AlwaysPrepared,UntilRest)"/> -->
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(8a13f7df-8aef-4762-91c9-1aa87e77bc80,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="e72e1f37-f856-4d49-a17e-d2f667f7fad6" />
                 </node>
@@ -177,7 +176,7 @@
                         <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="" />
+                        <attribute id="Selectors" type="LSString" value="SelectSpells(8a13f7df-8aef-4762-91c9-1aa87e77bc80,0,1,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="26221d03-f7d2-49ae-a7d2-5aeaa385099a" />
                 </node>

@@ -1,4 +1,4 @@
-    // Psi Point Cost //
+// Psi Point Cost //
 
     new entry "Psion_PsiPointCost"
     type "PassiveData"
@@ -6,14 +6,58 @@
     data "Description" "h6ea4dde0g063bg4dd6g9b02gc1b1202624e3"
     data "Boosts" "UnlockSpellVariant(IsPsiSpell(), ModifyUseCosts(Add,PsiPointsResource,SpellPowerLevel,0),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyTooltipDescription())"
     data "Icon" "Spell_Transmutation_Thaumaturgy"
-    // data "StatsFunctors" "ApplyStatus(SELF,Psion_PsiPointCost_Boost,100,-1)"
 
-    
-    new entry "Psion_PsiPointCost_Boost"
-    type "StatusData"
-    data "StatusType" "BOOST"
-    data "DisplayName" "h465c7c80g8c66g4489gb557g936b84841143"
-    data "Description" "h6ea4dde0g063bg4dd6g9b02gc1b1202624e3"
-    data "Icon" "PassiveFeature_ExtraAttack"
-    data "TickType" "StartTurn"
-    data "Boosts" "UnlockSpellVariant(IsPsiSpell(), ModifyUseCosts(Add,PsiPointsResource,SpellPowerLevel,0),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyTooltipDescription())"
+
+// ~~~ CELERITY ~~~ //
+
+// Celerity I
+    new entry "CelerityI"
+    type "PassiveData"
+    data "DisplayName" "hf5c35c61g8923g4b5eg9602g9ab55547f461"
+    data "Description" "hf34c447egacddg4070gb8cag25e99274c653"
+    data "Icon" "Spell_Transmutation_Haste"
+    data "Boosts" "ActionResource(Movement, +3, 0);UnlockSpell(Shout_Dash_BonusAction)"
+
+// Celerity II (Req: Level 5 & Celerity I)
+    new entry "CelerityII"
+    type "PassiveData"
+    data "DisplayName" "[HANDLECelerityII]"
+    data "Description" "[HANDLECelerityIIDesc]"
+    data "Icon" "Spell_Transmutation_Haste"
+    data "Passives" "CelerityIISpeed;CelerityIIDash"
+
+    new entry "CelerityIISpeed"
+    type "PassiveData"
+    data "Icon" "Spell_Transmutation_Haste"
+    data "Boosts" "ActionResource(Movement, +1.5, 0);"
+
+    new entry "CelerityIIDash"
+    type "PassiveData"
+    data "Properties" "OncePerTurn"
+    data "StatsFunctorContext" "OnCast"
+    data "Conditions" "SpellCategoryIs(SpellCategory.Dash) and Combat()"
+    data "StatsFunctors" "ApplyStatus(SELF, DodgeUntilEndTurn, 100, 1)"
+
+// Celerity III (Req: Level 11 & Celerity II)
+    new entry "CelerityIIISpeed"
+    type "PassiveData"
+    data "DisplayName" "[HANDLECelerityIII]"
+    data "Description" "[HANDLECelerityIIIDesc]"
+    data "Icon" "Spell_Transmutation_Haste"
+    data "Boosts" "ActionResource(Movement, +1.5, 0);"
+
+    new entry "CelerityIIIDash"
+    type "PassiveData"
+    data "Properties" "OncePerTurn"
+    data "StatsFunctorContext" "OnCast"
+    data "Conditions" "SpellCategoryIs(SpellCategory.Dash) and Combat()"
+    data "StatsFunctors" "ApplyStatus(SELF, AvoidDifficultTerrain, 100, 1);"
+
+data "Passives" "Evasion"
+// Celerity IV (Req: Level 16 & Celerity III)
+    new entry "CelerityIIISpeed"
+    type "PassiveData"
+    data "DisplayName" "[HANDLECelerityIV]"
+    data "Description" "[HANDLECelerityIVDesc]"
+    data "Icon" "PassiveFeature_Evasion"
+    data "Boosts" "AreaDamageEvade();RollBonus(RawAbility,max(0,IntelligenceModifier-DexterityModifier),Dexterity);RollBonus(RawAbility,max(0,IntelligenceModifier-DexterityModifier),Dexterity);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),Acrobatics);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),SleightOfHand);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),Stealth);RollBonus(SavingThrow,max(0,IntelligenceModifier-DexterityModifier),Dexterity)"

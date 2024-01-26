@@ -8,7 +8,7 @@
         <node id="ModuleInfo">
           <attribute id="Author" type="LSWString" value="Sketching101" />
           <attribute id="CharacterCreationLevelName" type="FixedString" value="" />
-          <attribute id="Description" type="LSWString" value="Psion Class Mod" />
+          <attribute id="Description" type="LSWString" value="Psion Class Mod. Requires 5eSpells, CompatibilityFramework, Polymorph Spell" />
           <attribute id="Folder" type="LSWString" value="Psion" />
           <attribute id="GMTemplate" type="FixedString" value="" />
           <attribute id="LobbyLevelName" type="FixedString" value="" />

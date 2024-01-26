@@ -8,6 +8,7 @@
 	<content contentuid="h13cf3603g28b7g474ag8895g67274f66b919" version="1">Determines the highest level spell you can cast using your Psi Points.</content>
 	<content contentuid="h465c7c80g8c66g4489gb557g936b84841143" version="1">Psionic Magic</content>
 	<content contentuid="h6ea4dde0g063bg4dd6g9b02gc1b1202624e3" version="1">You can cast spells using Psi points.</content>
+
 	<content contentuid="hf5c35c61g8923g4b5eg9602g9ab55547f461" version="1">Celerity I</content>
 	<content contentuid="hf34c447egacddg4070gb8cag25e99274c653" version="1">Your walking speed increases by 3 meters, and you can take the Dash action as a bonus action on your turn.</content>
 	<content contentuid="h2baed13ag0e32g4c76g8653gc01679bbb27c" version="1">Celerity II</content>
@@ -18,4 +19,36 @@
 	<content contentuid="hda58dc03g9f45g434ega45fgba80e4f29995" version="1">Prerequisite: 16th level Psion, Celerity I, II, III - When you make a Dexterity saving throw to take only half damage from a spell or effect, you instead take no damage if you succeed on the save, and only half damage if you fail. Also, when you make a Dexterity check or saving throw, you can use your Intelligence score, in place of Dexterity.</content>
 	<content contentuid="h6402c176g93a7g4a96gaa7cgf0ecfdb01116" version="1">Mystic Talents</content>
 	<content contentuid="ha19a73c4g4b00g46fdg9a7bgadd98745bd85" version="1">Below are the Mystic Talents available to a Psion. If a Talent has a prerequisite, like your Psion level or another Talent, you can learn it at the same time you meet the prerequisites. If a Talent allows you to learn a cantrip, it doesn't count against your total number of Cantrips Known. If you already know that cantrip you learn a Psion cantrip of your choice.</content>
+    
+	<content contentuid="[]" version="1"></content>
+
+    <content contentuid="h5134be88ge79bg40cbg9f1cg5e372694c110" version="1">Iron Durability I</content>
+	<content contentuid="he83f5514g529ag422bg8813g7466af7f70c3" version="1">So long as you are not wearing armor or wielding a shield, your Armor Class is equal to 13 + your Intelligence modifier.</content>
+    <content contentuid="hec6ea75ag1ac9g4ea9g9ea3g1970b2a04534" version="1">Iron Durability II</content>
+	<content contentuid="h40706c6dgb694g4674g8f06gee13260aecfb" version="1">Prerequisite: 5th level Psion, Iron Durability I - As a bonus action, you can spend 1 Psi Point to grant yourself temporary hit points equal to your Intelligence modifier (minimum of 1 temporary hit point)</content>
+    <content contentuid="ha7c8535bg0611g4bf6g8f19gbcdbb4333cc9" version="1">Iron Durability III</content>
+	<content contentuid="h55fe786eg6ab6g43e4gab50gec2d9a0a6947" version="1">Prerequisite: 11th level Psion, Iron Durability II - Whenever you take damage, you can use your reaction to expend 3 Psi Points and gain resistance to the triggering damage type until the start of your next turn.</content>
+	<content contentuid="h1a40d3e6gd2bag442fgbdc8g3c97b3ff14f9" version="1">Iron Durability III: Defense</content>
+	<content contentuid="h01b5f695gf96cg46ddg84c4g3046c51ffea8" version="1">Whenever you take damage, you can use your reaction to expend 3 Psi Points and gain resistance to the triggering damage type until the start of your next turn.</content>
+    <content contentuid="h802b53aegd3e8g4488gbe68g8773279fc8f5" version="1">Iron Durability IV</content>
+	<content contentuid="h53062f72g5f24g466dg82efgfe5e22f65fb7" version="1">prerequisite: 16th level Psion, Iron Durability III - Whenever you make a saving throw you gain a bonus to your roll equal to your Intelligence modifier (minimum of +1).</content>
+
+    <content contentuid="h362c8446ga2c9g4edaga7c1g9ed1a9f61f96" version="1">Precognition I</content>
+    <content contentuid="h270111f5g8da5g41e6gbec0g053a2eb9ca80" version="1">Precognition II</content>
+    <content contentuid="hf3913ec0g1c33g4ce4ga71fg6a70f9e89b6f" version="1"></content>
+    <content contentuid="ha46c69a1g1c80g46a8g9b8bg2222ad4de804" version="1">Precognition II: Psionic Parry</content>
+	<content contentuid="h42882c04g28e5g400cga51egfe4ca2f8468c" version="1"></content>
+    <content contentuid="hd0997bd1g200bg4c49gabafg705323b6977f" version="1">Precognition III</content>
+    <content contentuid="h9c1547c3g1c4fg420eg9e53g7b5b5f77baa5" version="1"></content>
+    <content contentuid="hda7d43fbg19f1g4427g9185g6c7450208263" version="1">Precognition III: Heightened Awareness</content>
+	<content contentuid="h7387ae92g91dfg4347ga6b7gded81bd89b69" version="1"></content>
+    <content contentuid="h8924b897g17f9g45bagb2e7ga3f7c8f2b4c8" version="1">Precognition IV: Quick Reflexes</content>
+	<content contentuid="hf293672eg6c49g43c2g89bfg7595798fe048" version="1"></content>
+
+    <content contentuid="he3a8a39ag2aebg44c1ga0b1g9da7525d32ed" version="1">Metamorphosis I</content>
+	<content contentuid="he2b8c29fg5dd8g4ac8g9b3fgeff8fd7eb307" version="1"></content>
+    <content contentuid="h2da896a0gaef7g4b40g90abg145a303bb8c6" version="1">Metamorphosis II</content>
+	<content contentuid="h3f31d6d1g6784g4e36gb9ceg8c397599a32b" version="1"></content>
+    <content contentuid="h200861d6gb9b3g452bga601g85e3f6c20bca" version="1">Metamorphosis IV</content>
+	<content contentuid="he696ea1eg5955g4b1dga1feg4a4b4508ede1" version="1"></content>
 </contentList>

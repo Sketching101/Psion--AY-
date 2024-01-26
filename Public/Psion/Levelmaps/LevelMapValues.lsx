@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="330"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1d6"/>
+                    <attribute id="Level5" type="LSString" value="1d8"/>
+                    <attribute id="Level10" type="LSString" value="1d10"/>
+                    <attribute id="Level17" type="LSString" value="1d12"/>
+                    <attribute id="Name" type="FixedString" value="PsionicStrikeUnarmedDamage"/>
+					<attribute id="PreferredClassUUID" type="guid" value="ff4e82b6-16ef-47cf-a64e-478541157551"/>
+                    <attribute id="UUID" type="guid" value="38655e62-98f0-4311-aee1-e151421fab59"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

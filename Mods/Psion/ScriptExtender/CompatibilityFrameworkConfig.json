@@ -3,7 +3,7 @@
   "ActionResourceGroups": [
     {
       "UUID": "03b17647-161a-42e1-9660-5ba517e80ad2",
-      "Definitions": ["b667277c-98b8-46ad-9556-f0838c7e1c02", "d136c5d9-0ff0-43da-acce-a74a07f8d6bf", "e9127b70-22b7-42a1-b172-d02f828f260a", "77fcde9b-9cda-4fbc-8806-393e26b2f3e1"],
+      "Definitions": ["d136c5d9-0ff0-43da-acce-a74a07f8d6bf", "e9127b70-22b7-42a1-b172-d02f828f260a", "77fcde9b-9cda-4fbc-8806-393e26b2f3e1", "b667277c-98b8-46ad-9556-f0838c7e1c02"],
       "modGuid": "85f69249-5280-485e-b598-b9967f8ae0fb",
       "Action": "Insert"
     }

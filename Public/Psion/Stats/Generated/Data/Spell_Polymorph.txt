@@ -1,0 +1,79 @@
+new entry "Target_Polymorph_Badger_Ally_Psion"
+using "Target_Polymorph_Badger_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Boar_Ally_Psion"
+using "Target_Polymorph_Boar_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Bear_Polar_Ally_Psion"
+using "Target_Polymorph_Bear_Polar_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Cat_Ally_Psion"
+using "Target_Polymorph_Cat_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_DeepRothe_Ally_Psion"
+using "Target_Polymorph_DeepRothe_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Dilophosaurus_Ally_Psion"
+using "Target_Polymorph_Dilophosaurus_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Owlbear_Ally_Psion"
+using "Target_Polymorph_Owlbear_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Panther_Ally_Psion"
+using "Target_Polymorph_Panther_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Raven_Ally_Psion"
+using "Target_Polymorph_Raven_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_SaberTooth_Tiger_Ally_Psion"
+using "Target_Polymorph_SaberTooth_Tiger_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Spider_Ally_Psion"
+using "Target_Polymorph_Spider_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Wolf_Dire_Ally_Psion"
+using "Target_Polymorph_Wolf_Dire_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Rat_Ally_Psion"
+using "Target_Polymorph_Rat_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Frog_Ally_Psion"
+using "Target_Polymorph_Frog_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Crab_Ally_Psion"
+using "Target_Polymorph_Crab_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"
+
+new entry "Target_Polymorph_Dog_Ally_Psion"
+using "Target_Polymorph_Dog_Ally"
+data "MemoryCost" ""
+data "UseCosts" "BonusActionPoint:1;PsiPointsResource:3"

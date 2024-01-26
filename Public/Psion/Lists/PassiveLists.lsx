@@ -4,9 +4,21 @@
     <region id="PassiveLists">
         <node id="root">
             <children>
-                <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="CelerityI;CelerityII;CelerityIII;CelerityIV" />
+                <node id="PassiveList"> All Talents
+                    <attribute id="Passives" type="LSString" value="Talent_CelerityI,Talent_CelerityII,Talent_CelerityIII,Talent_CelerityIV,Talent_IronDurabilityI,Talent_IronDurabilityII,Talent_IronDurabilityIII,Talent_IronDurabilityIV,Talent_MetamorphosisI,Talent_MetamorphosisII,Talent_MetamorphosisIII,Talent_MetamorphosisIV,Talent_PrecognitionI,Talent_PrecognitionII,Talent_PrecognitionIII,Talent_PrecognitionIV" />
                     <attribute id="UUID" type="guid" value="012b4efb-2568-4b49-9351-617df1a00f93" />
+                </node>
+                <node id="PassiveList"> Tier 3 Talents
+                    <attribute id="Passives" type="LSString" value="Talent_CelerityI,Talent_CelerityII,Talent_CelerityIII,Talent_IronDurabilityI,Talent_IronDurabilityII,Talent_IronDurabilityIII,Talent_MetamorphosisI,Talent_MetamorphosisII,Talent_PrecognitionI,Talent_PrecognitionII" />
+                    <attribute id="UUID" type="guid" value="e25c5ac6-3569-4a34-bdfe-0e0b6b2ad542" />
+                </node>
+                <node id="PassiveList"> Tier 2 Talents
+                    <attribute id="Passives" type="LSString" value="Talent_CelerityI,Talent_CelerityII,Talent_IronDurabilityI,Talent_IronDurabilityII,Talent_MetamorphosisI,Talent_MetamorphosisII,Talent_PrecognitionI,Talent_PrecognitionII" />
+                    <attribute id="UUID" type="guid" value="c598fb09-b0d3-44fa-ac88-d2bd38e0100e" />
+                </node>
+                <node id="PassiveList"> Tier 1 Talents
+                    <attribute id="Passives" type="LSString" value="Talent_CelerityI,Talent_IronDurabilityI,Talent_MetamorphosisI,Talent_PrecognitionI" />
+                    <attribute id="UUID" type="guid" value="dd6408e4-b1b6-491d-92be-8093b1c0673b" />
                 </node>
             </children>
         </node>

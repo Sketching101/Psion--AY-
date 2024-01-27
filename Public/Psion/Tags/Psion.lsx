@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Psions learn to manipulate the world with the wondrous power of their minds. Drawing upon the mystical power within, they can communicate without speaking, move objects, alter their physical bodies, and even manifest spells." />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h44603d09g9250g4d6bg8a7egd981cca2caf8" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="he6eb02f6g1539g4c48g9dedg7f053bedaa16" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="Psion" />
+			<attribute id="UUID" type="guid" value="dc8a847f-77b0-4dbb-a564-1ded034a1976" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

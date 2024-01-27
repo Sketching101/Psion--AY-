@@ -5,7 +5,7 @@
         <node id="root">
             <children>
                 <node id="PassiveList"> All Talents
-                    <attribute id="Passives" type="LSString" value="Talent_CelerityI,Talent_CelerityII,Talent_CelerityIII,Talent_CelerityIV,Talent_IronDurabilityI,Talent_IronDurabilityII,Talent_IronDurabilityIII,Talent_IronDurabilityIV,Talent_MetamorphosisI,Talent_MetamorphosisII,Talent_MetamorphosisIII,Talent_MetamorphosisIV,Talent_PrecognitionI,Talent_PrecognitionII,Talent_PrecognitionIII,Talent_PrecognitionIV" />
+                    <attribute id="Passives" type="LSString" value="Talent_CelerityI,Talent_CelerityII,Talent_CelerityIII,Talent_CelerityIV,Talent_IronDurabilityI,Talent_IronDurabilityII,Talent_IronDurabilityIII,Talent_IronDurabilityIV,Talent_MetamorphosisI,Talent_MetamorphosisII,Talent_MetamorphosisIII,Talent_MetamorphosisIV,Talent_PrecognitionI,Talent_PrecognitionII,Talent_PrecognitionIII,Talent_PrecognitionIV,Talent_RestorationI,Talent_RestorationII,Talent_RestorationIII,Talent_RestorationIV" />
                     <attribute id="UUID" type="guid" value="012b4efb-2568-4b49-9351-617df1a00f93" />
                 </node>
                 <node id="PassiveList"> Tier 3 Talents

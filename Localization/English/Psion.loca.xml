@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentList>
 	<content contentuid="he6eb02f6g1539g4c48g9dedg7f053bedaa16" version="1">Psion</content>
-	<content contentuid="h44603d09g9250g4d6bg8a7egd981cca2caf8" version="1">Whether through years of practice, or a once in a generation innate talent, Psions learn to manipulate the world with the wondrous power of their minds. Drawing upon the mystical power within, they can communicate without speaking, move objects, alter their physical bodies, and even manifest spells. Relying solely on mastery of their mind, Psions can perform feats thought impossible, even by the most erudite Wizards and devout Clerics. For Psions, it is a point of great pride that they can produce wonders without the help of external power. Due to their potential, Psions are often misunderstood and feared by the common folk. If they don’t learn to control their power, their strange abilities can cause them to be shunned and hated by those around them. Most Psions reveal their power only when necessary, and are hesitant to trust others.</content>
+	<content contentuid="h44603d09g9250g4d6bg8a7egd981cca2caf8" version="1">Psions learn to manipulate the world with the wondrous power of their minds. Drawing upon the mystical power within, they can communicate without speaking, move objects, alter their physical bodies, and even manifest spells.</content>
 	<content contentuid="h5af6d8f1g5778g4f5fgb20bga1575563ab36" version="1">Psi Points</content>
 	<content contentuid="hb9807d77g87c5g4511ga3dcg59e911baedf1" version="1">Psi Points are spent to cast spells, equal to the spell's level.</content>
 	<content contentuid="h04c9011cgc5e6g41fcgaa0fg0a941bfe895e" version="1">Mental Limit</content>
@@ -54,4 +54,14 @@
 	<content contentuid="h19231a46gafd2g447cg8837gea0da680bac2" version="1">Prerequisite: 11th level Psion, Metamorphosis II - As a bonus action you can spend 3 Psi Points to transform as if you had cast polymorph on yourself. While transformed in this way you retain your mental ability scores and personality.</content>
     <content contentuid="h200861d6gb9b3g452bga601g85e3f6c20bca" version="1">Metamorphosis IV</content>
 	<content contentuid="he696ea1eg5955g4b1dga1feg4a4b4508ede1" version="1">Prerequisite: 16th level Psion, Metamorphosis III - As a bonus action you can expend 5 Psi Points to transform,becoming Huge or Diminutive, gaining the following benefits:Huge. You gain temporary hit points equal to twice yourPsion level + your Intelligence modifier, your reach increasesby 10 feet, and your melee attacks deal 2d6 extra damage.Diminutive. You gain a +10 bonus to Dexterity (Stealth) checks, attacks made against you have disadvantage, and youcan fit through 1-inch gaps without squeezing. While you are Diminutive, you are too small to make weapon attacks.</content>
+
+    <content contentuid="[HANDLETalent_RestorationIName]" version="1">Restoration I</content>
+	<content contentuid="[HANDLETalent_RestorationIDesc]" version="1">You learn the spare the dying cantrip. It doesn't count against your total number of Cantrips Known. When you manifest spare the dying, it has a range of 30 feet.</content>
+	<content contentuid="[HANDLETalent_RestorationIIName]" version="1">Restoration II</content>
+	<content contentuid="[HANDLETalent_RestorationIIDesc]" version="1">Prerequisite: 5th level Psion, Restoration I - You have a pool of healing power that can restore [1] hit points. As an action, you can touch a creature and draw power from the pool to restore a number of hit points up to the maximum amount remaining in your pool. You can't heal undead or constructs. Your healing pool replenishes when you finish a long rest.</content>
+	<content contentuid="[HANDLETalent_RestorationIIIName]" version="1">Restoration III</content>
+	<content contentuid="[HANDLETalent_RestorationIIIDesc]" version="1">Prerequisite: 11th level Psion, Restoration II - As an action, you can touch a willing creature and expend 2 Psi Points to end one of the following conditions affecting it: blinded, charmed, deafened, frightened, poisoned, or stunned.</content>
+	<content contentuid="hf9113b18g9530g4c8aga544g0f5113031402" version="1">Cure a creature from blinded, charmed, deafened, frightened, poisoned, or stunned.</content>
+	<content contentuid="[HANDLETalent_RestorationIVName]" version="1">Restoration IV</content>
+	<content contentuid="[HANDLETalent_RestorationIVDesc]" version="1"></content>
 </contentList>

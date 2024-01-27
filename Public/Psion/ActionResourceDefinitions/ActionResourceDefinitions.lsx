@@ -13,7 +13,7 @@
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true" />
                     <attribute id="UUID" type="guid" value="29878437-7915-4589-a8ca-352c4c89ac54" />
                 </node>
-        <node id="ActionResourceDefinition"> Mental Limit
+                <node id="ActionResourceDefinition"> Mental Limit
                     <attribute id="DisplayName" type="TranslatedString" handle="h04c9011cgc5e6g41fcgaa0fg0a941bfe895e" version="1" />
                     <attribute id="Description" type="TranslatedString" handle="h13cf3603g28b7g474ag8895g67274f66b919" version="1" />
                     <attribute id="MaxLevel" type="uint32" value="5" />
@@ -33,6 +33,46 @@
                     <attribute id="UUID" type="guid" value="b667277c-98b8-46ad-9556-f0838c7e1c02"/>
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="true"/>
                 </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="IsHidden" type="bool" value="false" />
+                    <attribute id="MaxLevel" type="uint32" value="60"/>
+                    <attribute id="Name" type="FixedString" value="PsionRestorationPoint"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="12a7b0db-7398-4b4b-88a5-01abbf118fcd"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="IsHidden" type="bool" value="false" />
+                    <attribute id="MaxLevel" type="uint32" value="2"/>
+                    <attribute id="Name" type="FixedString" value="HarmoniousRecoveryResource"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="d5c02e2c-0120-4f40-b612-a4a225ad4124"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <!-- <node id="ActionResourceDefinition">
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="IsHidden" type="bool" value="false" />
+                    <attribute id="MaxLevel" type="uint32" value="100"/>
+                    <attribute id="Name" type="FixedString" value="ConsumptivePowerResource"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="25492be8-ceeb-470b-bb43-cca04cd5b159"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="IsHidden" type="bool" value="false" />
+                    <attribute id="MaxLevel" type="uint32" value="100"/>
+                    <attribute id="Name" type="FixedString" value="ConsumptivePowerBufferResource"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="20ff6b59-c410-4d5a-bbb4-2e9091d43762"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node> -->
         <!-- <node id="ActionResourceDefinition"> Template
                     <attribute id="Description" type="TranslatedString" handle="[TBA]" version="1" />
                     <attribute id="DisplayName" type="TranslatedString" handle="[TBA]" version="1" />

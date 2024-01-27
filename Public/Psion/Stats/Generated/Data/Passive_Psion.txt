@@ -1,197 +1,292 @@
-// Psi Point Cost //
-
-    new entry "Psion_PsiPointCost"
+// Class Features
+    // Harmonious Recovery //
+    new entry "HarmoniousRecovery"
     type "PassiveData"
-    data "DisplayName" "h465c7c80g8c66g4489gb557g936b84841143"
-    data "Description" "h6ea4dde0g063bg4dd6g9b02gc1b1202624e3"
-    data "Boosts" "UnlockSpellVariant(IsPsiSpell(), ModifyUseCosts(Add,PsiPointsResource,SpellPowerLevel,0),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyTooltipDescription())"
-    data "Icon" "Spell_Transmutation_Thaumaturgy"
+    data "DisplayName" "[HANDLEHarmoniousRecoveryName]"
+    data "Description" "[HANDLEHarmoniousRecoveryDesc]"
+    data "Icon" "Skill_Wizard_ArcaneRecovery"
+    data "Boost" "UnlockSpell(Shout_HarmoniousRecovery)"
 
 
-// ~~~ CELERITY ~~~ //
+    // Psi Point Cost //
 
-// Celerity I
-    new entry "Talent_CelerityI"
-    type "PassiveData"
-    data "DisplayName" "hf5c35c61g8923g4b5eg9602g9ab55547f461"
-    data "Description" "hf34c447egacddg4070gb8cag25e99274c653"
-    data "Icon" "Spell_Transmutation_Haste"
-    data "Boosts" "ActionResource(Movement, 3, 0);UnlockSpell(Shout_Dash_BonusAction)"
+        new entry "Psion_PsiPointCost"
+        type "PassiveData"
+        data "DisplayName" "h465c7c80g8c66g4489gb557g936b84841143"
+        data "Description" "h6ea4dde0g063bg4dd6g9b02gc1b1202624e3"
+        data "Boosts" "IF(not HasStatus('CONSUMPTIVE_POWER')):UnlockSpellVariant(IsPsiSpell(), ModifyUseCosts(Add,PsiPointsResource,SpellPowerLevel,0),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyTooltipDescription())"
+        data "Icon" "Spell_Transmutation_Thaumaturgy"
 
-// Celerity II (Req: Level 5 & Celerity I)
-    new entry "Talent_CelerityII"
-    type "PassiveData"
-    data "DisplayName" "h2baed13ag0e32g4c76g8653gc01679bbb27c"
-    data "Description" "hf206caa7g6b17g480cga8fbg137457ec4dee"
-    data "Icon" "Spell_Transmutation_Haste"
-    data "Boosts" "ActionResource(Movement, 1.5, 0);"
-    data "Properties" "OncePerTurn"
-    data "StatsFunctorContext" "OnCast"
-    data "Conditions" "SpellCategoryIs(SpellCategory.Dash) and Combat()"
-    data "StatsFunctors" "ApplyStatus(SELF, DodgeUntilEndTurn, 100, 1)"
+        // Consumptive Power //
 
-// Celerity III (Req: Level 11 & Celerity II)
-    new entry "Talent_CelerityIII"
-    type "PassiveData"
-    data "DisplayName" "h61ff6853gdf77g4ff3g88a4gb94e95901c9c"
-    data "Description" "hdc5b73a0gc0a6g4f27gba65g96c28a85e908"
-    data "Icon" "Spell_Transmutation_Haste"
-    data "Boosts" "ActionResource(Movement, 1.5, 0);"
-    data "Properties" "OncePerTurn"
-    data "StatsFunctorContext" "OnCast"
-    data "Conditions" "SpellCategoryIs(SpellCategory.Dash) and Combat()"
-    data "StatsFunctors" "ApplyStatus(SELF, AvoidDifficultTerrain, 100, 1);"
-
-// Celerity IV (Req: Level 16 & Celerity III)
-    new entry "Talent_CelerityIV"
-    type "PassiveData"
-    data "DisplayName" "ha602d29ag0a28g46acgbe39gd28bf5336af0"
-    data "Description" "hda58dc03g9f45g434ega45fgba80e4f29995"
-    data "Icon" "PassiveFeature_Evasion"
-    data "Passives" "Evasion"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Dexterity);AreaDamageEvade();RollBonus(RawAbility,max(0,IntelligenceModifier-DexterityModifier),Dexterity);RollBonus(RawAbility,max(0,IntelligenceModifier-DexterityModifier),Dexterity);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),Acrobatics);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),SleightOfHand);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),Stealth);RollBonus(SavingThrow,max(0,IntelligenceModifier-DexterityModifier),Dexterity)"
+        new entry "Psion_ConsumptivePower"
+        type "PassiveData"
+        data "DisplayName" "[HANDLEConsumptivePowerName]"
+        data "Description" "[HANDLEConsumptivePowerDesc]"
+        data "Icon" "Skill_Sorcerer_Passive_Metamagic_EmpoweredSpell"
+        data "Properties" "IsToggled;ToggledDefaultAddToHotbar"
+        data "ToggleOnFunctors" "ApplyStatus(CONSUMPTIVE_POWER, 100, -1);IF(not HasStatus('CONSUMPTIVE_POWER_MAX_HP')):ApplyStatus(CONSUMPTIVE_POWER_MAX_HP,100,-1)"
+        data "ToggleOffFunctors" "RemoveStatus(CONSUMPTIVE_POWER)"
+        data "StatsFunctorContext" "OnCast"
+        data "StatsFunctors" "IncreaseMaxHP(50);IF(IsPsiSpell() and HasStatus(CONSUMPTIVE_POWER)):IncreaseMaxHP(-(SpellPowerLevel*2))"
 
 
+// Mental Talents
+    // ~~~ CELERITY ~~~ //
 
-// ~~~ Iron Durability ~~~ //
+    // Celerity I
+        new entry "Talent_CelerityI"
+        type "PassiveData"
+        data "DisplayName" "hf5c35c61g8923g4b5eg9602g9ab55547f461"
+        data "Description" "hf34c447egacddg4070gb8cag25e99274c653"
+        data "Icon" "Spell_Transmutation_Haste"
+        data "Boosts" "ActionResource(Movement, 3, 0);UnlockSpell(Shout_Dash_BonusAction)"
 
-// Iron Durability I
-    new entry "Talent_IronDurabilityI"
-    type "PassiveData"
-    data "DisplayName" "h5134be88ge79bg40cbg9f1cg5e372694c110"
-    data "Description" "he83f5514g529ag422bg8813g7466af7f70c3"
-    data "Icon" "PassiveFeature_UnarmoredDefense"
-    data "Properties" "Highlighted"
-    data "BoostContext" "OnEquip;OnCreate"
-    data "BoostConditions" "not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)"
-    data "Boosts" "ACOverrideFormula(13,true,Intelligence)"
+    // Celerity II (Req: Level 5 & Celerity I)
+        new entry "Talent_CelerityII"
+        type "PassiveData"
+        data "DisplayName" "h2baed13ag0e32g4c76g8653gc01679bbb27c"
+        data "Description" "hf206caa7g6b17g480cga8fbg137457ec4dee"
+        data "Icon" "Spell_Transmutation_Haste"
+        data "Boosts" "ActionResource(Movement, 1.5, 0);"
+        data "Properties" "OncePerTurn"
+        data "StatsFunctorContext" "OnCast"
+        data "Conditions" "SpellCategoryIs(SpellCategory.Dash) and Combat()"
+        data "StatsFunctors" "ApplyStatus(SELF, DodgeUntilEndTurn, 100, 1)"
 
-// Iron Durability II (Req: Level 5 & Iron Durability I)
-    new entry "Talent_IronDurabilityII"
-    type "PassiveData"
-    data "DisplayName" "hec6ea75ag1ac9g4ea9g9ea3g1970b2a04534"
-    data "Description" "h40706c6dgb694g4674g8f06gee13260aecfb"
-    data "Icon" "Spell_Evocation_CureWounds"
-    data "Boosts" "UnlockSpell(Shout_IronDurability_TempHP)"
+    // Celerity III (Req: Level 11 & Celerity II)
+        new entry "Talent_CelerityIII"
+        type "PassiveData"
+        data "DisplayName" "h61ff6853gdf77g4ff3g88a4gb94e95901c9c"
+        data "Description" "hdc5b73a0gc0a6g4f27gba65g96c28a85e908"
+        data "Icon" "Spell_Transmutation_Haste"
+        data "Boosts" "ActionResource(Movement, 1.5, 0);"
+        data "Properties" "OncePerTurn"
+        data "StatsFunctorContext" "OnCast"
+        data "Conditions" "SpellCategoryIs(SpellCategory.Dash) and Combat()"
+        data "StatsFunctors" "ApplyStatus(SELF, AvoidDifficultTerrain, 100, 1);"
 
-// Iron Durability III (Req: Level 11 & Iron Durability II)
-    new entry "Talent_IronDurabilityIII"
-    type "PassiveData"
-    data "DisplayName" "ha7c8535bg0611g4bf6g8f19gbcdbb4333cc9"
-    data "Description" "h55fe786eg6ab6g43e4gab50gec2d9a0a6947"
-    data "Icon" "Spell_Abjuration_AbsorbElements"
-    data "Boosts" "UnlockSpell(Shout_IronDurability_AbsorbElements)"
-
-// Iron Durability IV (Req: Level 16 & Celerity III)
-    new entry "Talent_IronDurabilityVI"
-    type "PassiveData"
-    data "DisplayName" "h802b53aegd3e8g4488gbe68g8773279fc8f5"
-    data "Description" "h53062f72g5f24g466dg82efgfe5e22f65fb7"
-    data "Boosts" "RollBonus(SavingThrow,IntelligenceModifier,Strength);RollBonus(SavingThrow,max(IntelligenceModifier,1),Dexterity);RollBonus(SavingThrow,max(IntelligenceModifier,1),Constitution);RollBonus(SavingThrow,max(IntelligenceModifier,1),Intelligence);RollBonus(SavingThrow,max(IntelligenceModifier,1),Wisdom);RollBonus(SavingThrow,max(IntelligenceModifier,1),Charisma);"
-    data "Icon" "Action_Paladin_AuraOfProtection"
-
-
-// ~~~ Metamorphosis ~~~ //
-
-// Metamorphosis I
-    new entry "Talent_MetamorphosisI"
-    type "PassiveData"
-    data "DisplayName" "he3a8a39ag2aebg44c1ga0b1g9da7525d32ed"
-    data "Description" "he2b8c29fg5dd8g4ac8g9b3fgeff8fd7eb307"
-    data "DescriptionParams" "DealDamage(LevelMapValue(PsionicStrikeUnarmedDamage+SpellCastingAbilityModifier),Psychic,Magical)"
-    data "Icon" "PassiveFeature_MartialArts_DextrousUnarmedAttacks"
-    data "BoostContext" "OnStatusApply;OnStatusRemove;OnEquip;OnShortRest;OnCreate;OnLongRest;OnInventoryChanged"
-    data "Properties" "IsToggled"
-    data "Properties" "Highlighted"
-    data "Boosts" "UnlockSpell(Target_PsionicStrike_Psion)"
-
-        new entry "Target_PsionicStrike_Psion"
-        type "SpellData"
-        data "SpellType" "Target"
-        using "Target_UnarmedAttack"
-        data "RequirementConditions" "not HasStatus('SG_Polymorph_BeastShape')"
-        data "SpellRoll" "Attack(AttackType.MeleeSpellAttack)"
-        data "SpellSuccess" "DealDamage(PsionicStrikeUnarmedDamage+SpellCastingAbilityModifier, Psychic)"
-        data "Icon" "Action_Monk_FreeUnarmedStrike"
-        data "DisplayName" "h69adc5a5ge60ag4affg84a0gd14490176db0;1"
-        data "Description" "hefec7f3fg7e34g4a1ag97a4gc4223e9e32b4;2"
-        data "TooltipDamageList" "DealDamage(PsionicStrikeUnarmedDamage+SpellCastingAbilityModifier, Psychic)"
-        data "PrepareSound" "Vocal_Component_Monk_Damage"
-        data "CastSound" "Spell_Cast_Monk_UnarmedStrike_L1to3"
-        data "TargetSound" "Spell_Impact_Monk_UnarmedStrike_L1to3"
-        data "UseCosts" "ActionPoint:1"
-        data "SpellAnimation" "8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;0579f797-dd8e-408d-b18d-01650f6041e2,,;69345989-e868-432e-9d8c-84f4bcf77494,,;5925204d-590c-4d7c-ac62-a51ba44d4589,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
-        data "DualWieldingSpellAnimation" "8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;0579f797-dd8e-408d-b18d-01650f6041e2,,;69345989-e868-432e-9d8c-84f4bcf77494,,;5925204d-590c-4d7c-ac62-a51ba44d4589,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
-        data "VerbalIntent" "Damage"
-        data "SpellStyleGroup" "Class"
-        data "SpellFlags" "IsMelee;IsHarmful;Temporary;DisableBlood"
-        data "CastEffect" "9d8f170e-35d7-4cdb-b1f9-5493cf771b19"
-        data "DamageType" "Psychic"
-        data "Sheathing" "DontChange"
-
-// Metamorphosis II
-    new entry "Talent_MetamorphosisII"
-    type "PassiveData"
-    data "DisplayName" "h2da896a0gaef7g4b40g90abg145a303bb8c6"
-    data "Description" "h3f31d6d1g6784g4e36gb9ceg8c397599a32b"
-    data "Icon" "Spell_Transmutation_EnlargeReduce"
-    data "Boosts" "UnlockSpell(Shout_MetamorphosisII_Enlarge);UnlockSpell(Shout_MetamorphosisII_Reduce)"
-
-// Metamorphosis III
-    new entry "Talent_MetamorphosisIII"
-    type "PassiveData"
-    data "DisplayName" "h3cca98a2g1da4g44a5g8aa7g7b4b609d372a"
-    data "Description" "h19231a46gafd2g447cg8837gea0da680bac2"
-    data "Icon" "Spell_Transmutation_Polymorph"
-    data "Boosts" "UnlockSpell(Shout_MetamorphosisIII_Polymorph)"
+    // Celerity IV (Req: Level 16 & Celerity III)
+        new entry "Talent_CelerityIV"
+        type "PassiveData"
+        data "DisplayName" "ha602d29ag0a28g46acgbe39gd28bf5336af0"
+        data "Description" "hda58dc03g9f45g434ega45fgba80e4f29995"
+        data "Icon" "PassiveFeature_Evasion"
+        data "Passives" "Evasion"
+        data "Boosts" "ProficiencyBonus(SavingThrow,Dexterity);AreaDamageEvade();RollBonus(RawAbility,max(0,IntelligenceModifier-DexterityModifier),Dexterity);RollBonus(RawAbility,max(0,IntelligenceModifier-DexterityModifier),Dexterity);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),Acrobatics);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),SleightOfHand);RollBonus(SkillCheck,max(0,IntelligenceModifier-DexterityModifier),Stealth);RollBonus(SavingThrow,max(0,IntelligenceModifier-DexterityModifier),Dexterity)"
 
 
-// Metamorphosis IV
-    new entry "Talent_MetamorphosisIV"
-    type "PassiveData"
-    data "DisplayName" "h200861d6gb9b3g452bga601g85e3f6c20bca"
-    data "Description" "he696ea1eg5955g4b1dga1feg4a4b4508ede1"
-    data "Icon" "Spell_Transmutation_EnlargeReduce"
-    data "Boosts" "UnlockSpell(Shout_MetamorphosisIV_Enlarge);UnlockSpell(Shout_MetamorphosisIV_Reduce)"
 
-    
+    // ~~~ Iron Durability ~~~ //
 
-// ~~~ Precognition ~~~ //
+    // Iron Durability I
+        new entry "Talent_IronDurabilityI"
+        type "PassiveData"
+        data "DisplayName" "h5134be88ge79bg40cbg9f1cg5e372694c110"
+        data "Description" "he83f5514g529ag422bg8813g7466af7f70c3"
+        data "Icon" "PassiveFeature_UnarmoredDefense"
+        data "Properties" "Highlighted"
+        data "BoostContext" "OnEquip;OnCreate"
+        data "BoostConditions" "not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)"
+        data "Boosts" "ACOverrideFormula(13,true,Intelligence)"
 
-// Precognition I
-    new entry "Talent_PrecognitionI"
-    type "PassiveData"
-    data "DisplayName" "h362c8446ga2c9g4edaga7c1g9ed1a9f61f96"
-    data "Description" "h4bccaad4gb27bg4547gb506g16f35e47b130"
-    data "DescriptionParams" "IntelligenceModifier"
-    data "Icon" "PassiveFeature_Generic_Threat"
-    data "Properties" "Highlighted"
-    data "Boosts" "Initiative(max(1,Cause.SpellCastingAbilityModifier));StatusImmunity(SURPRISED)"
+    // Iron Durability II (Req: Level 5 & Iron Durability I)
+        new entry "Talent_IronDurabilityII"
+        type "PassiveData"
+        data "DisplayName" "hec6ea75ag1ac9g4ea9g9ea3g1970b2a04534"
+        data "Description" "h40706c6dgb694g4674g8f06gee13260aecfb"
+        data "Icon" "Spell_Evocation_CureWounds"
+        data "Boosts" "UnlockSpell(Shout_IronDurability_TempHP)"
 
-// Precognition II
-    new entry "Talent_PrecognitionII"
-    type "PassiveData"
-    data "DisplayName" "h270111f5g8da5g41e6gbec0g053a2eb9ca80"
-    data "Description" "hf3913ec0g1c33g4ce4ga71fg6a70f9e89b6f"
-    data "DescriptionParams" "SpellCastingAbilityModifier"
-    data "Icon" "PassiveFeature_Parry"
-    data "Boosts" "UnlockSpell(Shout_PrecognitionII_Shield)"
+    // Iron Durability III (Req: Level 11 & Iron Durability II)
+        new entry "Talent_IronDurabilityIII"
+        type "PassiveData"
+        data "DisplayName" "ha7c8535bg0611g4bf6g8f19gbcdbb4333cc9"
+        data "Description" "h55fe786eg6ab6g43e4gab50gec2d9a0a6947"
+        data "Icon" "Spell_Abjuration_AbsorbElements"
+        data "Boosts" "UnlockSpell(Shout_IronDurability_AbsorbElements)"
 
-// Precognition III
-    new entry "Talent_PrecognitionIII"
-    type "PassiveData"
-    data "DisplayName" "hd0997bd1g200bg4c49gabafg705323b6977f"
-    data "Description" "h9c1547c3g1c4fg420eg9e53g7b5b5f77baa5"
-    data "Icon" "Spell_Divination_SeeInvisibility"
-    data "Boosts" "UnlockSpell(Shout_PrecognitionIII_Defense)"
-    
-// Precognition IV
-    new entry "Talent_PrecognitionIV"
-    type "PassiveData"
-    data "DisplayName" "h8924b897g17f9g45bagb2e7ga3f7c8f2b4c8"
-    data "Description" "hf293672eg6c49g43c2g89bfg7595798fe048"
-    data "Icon" "Action_DreadAmbusher_Melee"
-    data "Properties" "Highlighted;OncePerCombat"
-    data "StatsFunctorContext" "OnTurn"
-    data "Conditions" "Combat()"
-    data "StatsFunctors" "ApplyStatus(ACTION_SURGE,100,1)"
+    // Iron Durability IV (Req: Level 16 & Celerity III)
+        new entry "Talent_IronDurabilityVI"
+        type "PassiveData"
+        data "DisplayName" "h802b53aegd3e8g4488gbe68g8773279fc8f5"
+        data "Description" "h53062f72g5f24g466dg82efgfe5e22f65fb7"
+        data "Boosts" "RollBonus(SavingThrow,IntelligenceModifier,Strength);RollBonus(SavingThrow,max(IntelligenceModifier,1),Dexterity);RollBonus(SavingThrow,max(IntelligenceModifier,1),Constitution);RollBonus(SavingThrow,max(IntelligenceModifier,1),Intelligence);RollBonus(SavingThrow,max(IntelligenceModifier,1),Wisdom);RollBonus(SavingThrow,max(IntelligenceModifier,1),Charisma);"
+        data "Icon" "Action_Paladin_AuraOfProtection"
+
+
+    // ~~~ Metamorphosis ~~~ //
+
+    // Metamorphosis I
+        new entry "Talent_MetamorphosisI"
+        type "PassiveData"
+        data "DisplayName" "he3a8a39ag2aebg44c1ga0b1g9da7525d32ed"
+        data "Description" "he2b8c29fg5dd8g4ac8g9b3fgeff8fd7eb307"
+        data "DescriptionParams" "DealDamage(LevelMapValue(PsionicStrikeUnarmedDamage+SpellCastingAbilityModifier),Psychic,Magical)"
+        data "Icon" "PassiveFeature_MartialArts_DextrousUnarmedAttacks"
+        data "BoostContext" "OnStatusApply;OnStatusRemove;OnEquip;OnShortRest;OnCreate;OnLongRest;OnInventoryChanged"
+        data "Properties" "IsToggled"
+        data "Properties" "Highlighted"
+        data "Boosts" "UnlockSpell(Target_PsionicStrike_Psion)"
+
+            new entry "Target_PsionicStrike_Psion"
+            type "SpellData"
+            data "SpellType" "Target"
+            using "Target_UnarmedAttack"
+            data "RequirementConditions" "not HasStatus('SG_Polymorph_BeastShape')"
+            data "SpellRoll" "Attack(AttackType.MeleeSpellAttack)"
+            data "SpellSuccess" "DealDamage(PsionicStrikeUnarmedDamage+SpellCastingAbilityModifier, Psychic)"
+            data "Icon" "Action_Monk_FreeUnarmedStrike"
+            data "DisplayName" "h69adc5a5ge60ag4affg84a0gd14490176db0;1"
+            data "Description" "hefec7f3fg7e34g4a1ag97a4gc4223e9e32b4;2"
+            data "TooltipDamageList" "DealDamage(PsionicStrikeUnarmedDamage+SpellCastingAbilityModifier, Psychic)"
+            data "PrepareSound" "Vocal_Component_Monk_Damage"
+            data "CastSound" "Spell_Cast_Monk_UnarmedStrike_L1to3"
+            data "TargetSound" "Spell_Impact_Monk_UnarmedStrike_L1to3"
+            data "UseCosts" "ActionPoint:1"
+            data "SpellAnimation" "8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;0579f797-dd8e-408d-b18d-01650f6041e2,,;69345989-e868-432e-9d8c-84f4bcf77494,,;5925204d-590c-4d7c-ac62-a51ba44d4589,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
+            data "DualWieldingSpellAnimation" "8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;0579f797-dd8e-408d-b18d-01650f6041e2,,;69345989-e868-432e-9d8c-84f4bcf77494,,;5925204d-590c-4d7c-ac62-a51ba44d4589,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
+            data "VerbalIntent" "Damage"
+            data "SpellStyleGroup" "Class"
+            data "SpellFlags" "IsMelee;IsHarmful;Temporary;DisableBlood"
+            data "CastEffect" "9d8f170e-35d7-4cdb-b1f9-5493cf771b19"
+            data "DamageType" "Psychic"
+            data "Sheathing" "DontChange"
+
+    // Metamorphosis II
+        new entry "Talent_MetamorphosisII"
+        type "PassiveData"
+        data "DisplayName" "h2da896a0gaef7g4b40g90abg145a303bb8c6"
+        data "Description" "h3f31d6d1g6784g4e36gb9ceg8c397599a32b"
+        data "Icon" "Spell_Transmutation_EnlargeReduce"
+        data "Boosts" "UnlockSpell(Shout_MetamorphosisII_Enlarge);UnlockSpell(Shout_MetamorphosisII_Reduce)"
+
+    // Metamorphosis III
+        new entry "Talent_MetamorphosisIII"
+        type "PassiveData"
+        data "DisplayName" "h3cca98a2g1da4g44a5g8aa7g7b4b609d372a"
+        data "Description" "h19231a46gafd2g447cg8837gea0da680bac2"
+        data "Icon" "Spell_Transmutation_Polymorph"
+        data "Boosts" "UnlockSpell(Shout_MetamorphosisIII_Polymorph)"
+
+
+    // Metamorphosis IV
+        new entry "Talent_MetamorphosisIV"
+        type "PassiveData"
+        data "DisplayName" "h200861d6gb9b3g452bga601g85e3f6c20bca"
+        data "Description" "he696ea1eg5955g4b1dga1feg4a4b4508ede1"
+        data "Icon" "Spell_Transmutation_EnlargeReduce"
+        data "Boosts" "UnlockSpell(Shout_MetamorphosisIV_Enlarge);UnlockSpell(Shout_MetamorphosisIV_Reduce)"
+
+
+    // ~~~ Precognition ~~~ //
+
+    // Precognition I
+        new entry "Talent_PrecognitionI"
+        type "PassiveData"
+        data "DisplayName" "h362c8446ga2c9g4edaga7c1g9ed1a9f61f96"
+        data "Description" "h4bccaad4gb27bg4547gb506g16f35e47b130"
+        data "DescriptionParams" "IntelligenceModifier"
+        data "Icon" "PassiveFeature_Generic_Threat"
+        data "Properties" "Highlighted"
+        data "Boosts" "Initiative(max(1,Cause.SpellCastingAbilityModifier));StatusImmunity(SURPRISED)"
+
+    // Precognition II
+        new entry "Talent_PrecognitionII"
+        type "PassiveData"
+        data "DisplayName" "h270111f5g8da5g41e6gbec0g053a2eb9ca80"
+        data "Description" "hf3913ec0g1c33g4ce4ga71fg6a70f9e89b6f"
+        data "DescriptionParams" "SpellCastingAbilityModifier"
+        data "Icon" "PassiveFeature_Parry"
+        data "Boosts" "UnlockSpell(Shout_PrecognitionII_Shield)"
+
+    // Precognition III
+        new entry "Talent_PrecognitionIII"
+        type "PassiveData"
+        data "DisplayName" "hd0997bd1g200bg4c49gabafg705323b6977f"
+        data "Description" "h9c1547c3g1c4fg420eg9e53g7b5b5f77baa5"
+        data "Icon" "Spell_Divination_SeeInvisibility"
+        data "Boosts" "UnlockSpell(Shout_PrecognitionIII_Defense)"
+        
+    // Precognition IV
+        new entry "Talent_PrecognitionIV"
+        type "PassiveData"
+        data "DisplayName" "h8924b897g17f9g45bagb2e7ga3f7c8f2b4c8"
+        data "Description" "hf293672eg6c49g43c2g89bfg7595798fe048"
+        data "Icon" "Action_DreadAmbusher_Melee"
+        data "Properties" "Highlighted;OncePerCombat"
+        data "StatsFunctorContext" "OnTurn"
+        data "Conditions" "Combat()"
+        data "StatsFunctors" "ApplyStatus(ACTION_SURGE,100,1)"
+
+    // ~~~ Restoration ~~~ //
+
+    // Restoration I
+        new entry "Talent_RestorationI"
+        type "PassiveData"
+        data "DisplayName" "[HANDLETalent_RestorationIName]"
+        data "Description" "[HANDLETalent_RestorationIDesc]"
+        data "Icon" "Vocal_Component_Stabilize"
+        data "Properties" "Highlighted"
+        data "Boosts" "Initiative(Target_SpareTheDying_Psion)"
+
+    // Restoration II
+        new entry "Talent_RestorationII"
+        type "PassiveData"
+        data "DisplayName" "[HANDLETalent_RestorationIIName]" 
+        data "Description" "[HANDLETalent_RestorationIIDesc]"
+        data "DescriptionParams" "ClassLevel(Psion)"
+        data "Icon" "Action_Paladin_LayOnHands_BigHeal"
+        data "StatsFunctorContext" "OnCreate;OnLongRest"
+        data "StatsFunctors" "IF(ClassLevelHigherOrEqualThan(2,'Psion')):ApplyStatus(RESTORATIONII_HEAL_RESOURCE,100,-1);IF(ClassLevelHigherOrEqualThan(3,'Psion')):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'Psion')):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'Psion')):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'Psion')):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Psion')):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'Psion')):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'Psion')):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_12,100,-1)"
+        data "Boosts" "UnlockSpell(Target_RestorationII_Heal)"
+
+
+    // Restoration III
+        new entry "Talent_RestorationIII"
+        type "PassiveData"
+        data "DisplayName" "[HANDLETalent_RestorationIIIName]"
+        data "Description" "[HANDLETalent_RestorationIIIDesc]"
+        data "Icon" "Spell_Abjuration_LesserRestoration"
+        data "Boosts" "UnlockSpell(Target_LesserRestoration_Psion)"
+        
+    // Restoration IV
+        new entry "Talent_RestorationIV"
+        type "PassiveData"
+        data "DisplayName" "[HANDLETalent_RestorationIVName]"
+        data "Description" "[HANDLETalent_RestorationIVDesc]"
+        data "Icon" "Spell_Necromancy_Revivify"
+        data "Boosts" "UnlockSpell(Teleportation_Revivify_Psion)"
+
+
+
+
+    // Level Indicator
+
+        new entry "PsionLevel1"
+        type "PassiveData"
+        new entry "PsionLevel2"
+        type "PassiveData"
+        new entry "PsionLevel3"
+        type "PassiveData"
+        new entry "PsionLevel4"
+        type "PassiveData"
+        new entry "PsionLevel5"
+        type "PassiveData"
+        new entry "PsionLevel6"
+        type "PassiveData"
+        new entry "PsionLevel7"
+        type "PassiveData"
+        new entry "PsionLevel8"
+        type "PassiveData"
+        new entry "PsionLevel9"
+        type "PassiveData"
+        new entry "PsionLevel10"
+        type "PassiveData"
+        new entry "PsionLevel11"
+        type "PassiveData"
+        new entry "PsionLevel12"
+        type "PassiveData"
+
+        
+        // data "StatsFunctors" "HasStatus(PsionLevel2):ApplyStatus(RESTORATIONII_HEAL_RESOURCE,100,-1);HasStatus(PsionLevel3):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_6,100,-1);HasStatus(PsionLevel7):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_7,100,-1);HasStatus(PsionLevel8):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_8,100,-1);HasStatus(PsionLevel9):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_9,100,-1);HasStatus(PsionLevel10):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_10,100,-1);HasStatus(PsionLevel11):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_11,100,-1);HasStatus(PsionLevel12):ApplyStatus(RESTORATIONII_HEAL_RESOURCE_12,100,-1)"

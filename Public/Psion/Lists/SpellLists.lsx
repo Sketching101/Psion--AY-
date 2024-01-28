@@ -39,6 +39,11 @@
           <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Target_Eyebite;Target_GlobeOfInvulnerability;Target_IrresistibleDance" /> 
           <attribute id="UUID" type="guid" value="8d057c74-fdf3-4ca3-b162-92db86c2dd45" />
         </node>
+        <node id="SpellList">
+            <attribute id="Comment" type="LSString" value="Psion Harmonious Recovery"/>
+            <attribute id="Spells" type="LSString" value="Shout_HarmoniousRecovery"/>
+            <attribute id="UUID" type="guid" value="ce4feca3-dce1-465e-8acf-99d43acb5931"/>
+        </node>
       </children>
     </node>
   </region>

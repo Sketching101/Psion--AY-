@@ -52,10 +52,10 @@
                         <attribute id="Boosts" type="LSString" value="ActionResource(PsiPointsResource,1,0);ActionResource(HarmoniousRecoveryResource,1,0)" />
                         <attribute id="Level" type="uint8" value="2" />
                         <attribute id="Name" type="LSString" value="Psion" />
-                        <attribute id="PassivesAdded" type="LSString" value="HarmoniousRecovery;Psion_ConsumptivePower" />
+                        <attribute id="PassivesAdded" type="LSString" value="" />
                         <attribute id="PassivesRemoved" type="LSString" value="" />
                         <attribute id="ProgressionType" type="uint8" value="0" />
-                        <attribute id="Selectors" type="LSString" value="SelectPassives(012b4efb-2568-4b49-9351-617df1a00f93,3,MysticTalents);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
+                        <attribute id="Selectors" type="LSString" value="AddSpells(ce4feca3-dce1-465e-8acf-99d43acb5931);SelectPassives(012b4efb-2568-4b49-9351-617df1a00f93,3,MysticTalents);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,1,2,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" /> dd6408e4-b1b6-491d-92be-8093b1c0673b,2,MysticTalents
                         <attribute id="UUID" type="guid" value="77c4191f-b10f-4a34-ae70-c82defd64134" />
                     </node>
@@ -183,23 +183,3 @@
         </node>
     </region>
 </save>
-<!-- <?xml version="1.0" encoding="utf-8"?>
-<save>
-  <version major="4" minor="0" revision="9" build="328" />
-  <region id="Progressions">
-    <node id="root">
-      <children>
-        <node id="Progression"> Mainclass Level 1
-                    <attribute id="AllowImprovement" type="bool" value="false" /> 
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Charisma);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);Proficiency(LightArmor)" /> 
-                    <attribute id="Level" type="uint8" value="1" /> 
-                    <attribute id="Name" type="LSString" value="Psion" /> 
-                    <attribute id="ProgressionType" type="uint8" value="0" /> 
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(PASSIVE_LIST_UUID,1);SelectSkills(SKILL_LIST_UUID,3);SelectSpells(SPELL_LIST_UUID,3,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,4,0)" /> 
-					<attribute id="TableUUID" type="guid" value="bfffeb63-bbb5-494f-a314-535503d38375" /> Same UUID as ClassDescriptions.lsx 
-                    <attribute id="UUID" type="guid" value="fefa32cb-ac2f-4a31-8f6c-e64d8e0c6314" /> 
-                </node>
-      </children>
-    </node>
-  </region>
-</save> -->

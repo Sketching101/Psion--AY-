@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <save>
-  <version major="4" minor="0" revision="9" build="328" />
-  <region id="ActionResourceDefinitions">
-    <node id="root">
-      <children>
-        <node id="ActionResourceDefinition"> Psi Points
+<version major="4" minor="0" revision="9" build="328" />
+    <region id="ActionResourceDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResourceDefinition"> Psi Points
                     <attribute id="DisplayName" type="TranslatedString" handle="h5af6d8f1g5778g4f5fgb20bga1575563ab36" version="1" />
                     <attribute id="Description" type="TranslatedString" handle="hb9807d77g87c5g4511ga3dcg59e911baedf1" version="1" />
                     <attribute id="MaxLevel" type="uint32" value="0" />
@@ -28,7 +28,7 @@
                     <attribute id="IsHidden" type="bool" value="true" />
                     <attribute id="MaxLevel" type="uint32" value="9"/>
                     <attribute id="Name" type="FixedString" value="PsionSpellSlot"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="ReplenishType" type="FixedString" value="None"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
                     <attribute id="UUID" type="guid" value="b667277c-98b8-46ad-9556-f0838c7e1c02"/>
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="true"/>
@@ -45,43 +45,15 @@
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="IsSpellResource" type="bool" value="false"/>
-                    <attribute id="IsHidden" type="bool" value="false" />
+                    <attribute id="IsHidden" type="bool" value="true" />
                     <attribute id="MaxLevel" type="uint32" value="2"/>
                     <attribute id="Name" type="FixedString" value="HarmoniousRecoveryResource"/>
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
                     <attribute id="UUID" type="guid" value="d5c02e2c-0120-4f40-b612-a4a225ad4124"/>
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
                 </node>
-                <!-- <node id="ActionResourceDefinition">
-                    <attribute id="IsSpellResource" type="bool" value="false"/>
-                    <attribute id="IsHidden" type="bool" value="false" />
-                    <attribute id="MaxLevel" type="uint32" value="100"/>
-                    <attribute id="Name" type="FixedString" value="ConsumptivePowerResource"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="25492be8-ceeb-470b-bb43-cca04cd5b159"/>
-                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="IsSpellResource" type="bool" value="false"/>
-                    <attribute id="IsHidden" type="bool" value="false" />
-                    <attribute id="MaxLevel" type="uint32" value="100"/>
-                    <attribute id="Name" type="FixedString" value="ConsumptivePowerBufferResource"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="20ff6b59-c410-4d5a-bbb4-2e9091d43762"/>
-                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
-                </node> -->
-        <!-- <node id="ActionResourceDefinition"> Template
-                    <attribute id="Description" type="TranslatedString" handle="[TBA]" version="1" />
-                    <attribute id="DisplayName" type="TranslatedString" handle="[TBA]" version="1" />
-                    <attribute id="Name" type="FixedString" value="[TBA]" />
-                    <attribute id="ReplenishType" type="FixedString" value="Rest" />
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true" />
-                    <attribute id="UUID" type="guid" value="[TBA]" />
-                </node> -->
-      </children>
-    </node>
-  </region>
+            </children>
+        </node>
+    </region>
 </save>

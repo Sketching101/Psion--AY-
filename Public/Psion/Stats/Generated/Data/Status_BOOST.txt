@@ -12,7 +12,6 @@
 
         new entry "CONSUMPTIVE_POWER_MAX_HP_L1"
         type "StatusData"
-        data "DisplayName" "[HANDLEConsumptivePowerName]"
         data "StatusType" "BOOST"
         data "StackType" "Stack"
         data "Properties" "IsHidden"
@@ -22,7 +21,6 @@
 
         new entry "CONSUMPTIVE_POWER_MAX_HP_L2"
         type "StatusData"
-        data "DisplayName" "[HANDLEConsumptivePowerName]"
         data "StatusType" "BOOST"
         data "StackType" "Stack"
         data "Properties" "IsHidden"
@@ -32,7 +30,6 @@
 
         new entry "CONSUMPTIVE_POWER_MAX_HP_L3"
         type "StatusData"
-        data "DisplayName" "[HANDLEConsumptivePowerName]"
         data "StatusType" "BOOST"
         data "StackType" "Stack"
         data "Properties" "IsHidden"
@@ -42,7 +39,6 @@
 
         new entry "CONSUMPTIVE_POWER_MAX_HP_L4"
         type "StatusData"
-        data "DisplayName" "[HANDLEConsumptivePowerName]"
         data "StatusType" "BOOST"
         data "StackType" "Stack"
         data "Properties" "IsHidden"
@@ -52,7 +48,6 @@
 
         new entry "CONSUMPTIVE_POWER_MAX_HP_L5"
         type "StatusData"
-        data "DisplayName" "[HANDLEConsumptivePowerName]"
         data "StatusType" "BOOST"
         data "StackType" "Stack"
         data "Properties" "IsHidden"

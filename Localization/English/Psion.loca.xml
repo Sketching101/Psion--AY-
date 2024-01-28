@@ -58,10 +58,14 @@
     <content contentuid="[HANDLETalent_RestorationIName]" version="1">Restoration I</content>
 	<content contentuid="[HANDLETalent_RestorationIDesc]" version="1">You learn the spare the dying cantrip. It doesn't count against your total number of Cantrips Known. When you manifest spare the dying, it has a range of 30 feet.</content>
 	<content contentuid="[HANDLETalent_RestorationIIName]" version="1">Restoration II</content>
-	<content contentuid="[HANDLETalent_RestorationIIDesc]" version="1">Prerequisite: 5th level Psion, Restoration I - You have a pool of healing power that can restore [1] hit points. As an action, you can touch a creature and draw power from the pool to restore a number of hit points up to the maximum amount remaining in your pool. You can't heal undead or constructs. Your healing pool replenishes when you finish a long rest.</content>
+	<content contentuid="[HANDLETalent_RestorationIIDesc]" version="1">Prerequisite: 5th level Psion, Restoration I - You have a pool of healing power that can restore [1] hit points. As an action, you can expend psi points and touch a creature and draw power from the pool to restore a number of hit points up to the maximum amount remaining in your pool and five times the psi points you expended. You can't heal undead or constructs. Your healing pool replenishes when you finish a long rest.</content>
 	<content contentuid="[HANDLETalent_RestorationIIIName]" version="1">Restoration III</content>
 	<content contentuid="[HANDLETalent_RestorationIIIDesc]" version="1">Prerequisite: 11th level Psion, Restoration II - As an action, you can touch a willing creature and expend 2 Psi Points to end one of the following conditions affecting it: blinded, charmed, deafened, frightened, poisoned, or stunned.</content>
 	<content contentuid="hf9113b18g9530g4c8aga544g0f5113031402" version="1">Cure a creature from blinded, charmed, deafened, frightened, poisoned, or stunned.</content>
 	<content contentuid="[HANDLETalent_RestorationIVName]" version="1">Restoration IV</content>
 	<content contentuid="[HANDLETalent_RestorationIVDesc]" version="1"></content>
+
+    
+	<content contentuid="h9822c132g1162g4496g8f21g54987dbb5493" version="1">Harmonious Recovery</content>
+	<content contentuid="hc3fd2ed9gddbdg4c09g9222gd3493bceeabe" version="1">Restore [1] psi points.</content>
 </contentList>

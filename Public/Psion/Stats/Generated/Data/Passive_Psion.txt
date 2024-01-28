@@ -1,12 +1,4 @@
 // Class Features
-    // Harmonious Recovery //
-    new entry "HarmoniousRecovery"
-    type "PassiveData"
-    data "DisplayName" "[HANDLEHarmoniousRecoveryName]"
-    data "Description" "[HANDLEHarmoniousRecoveryDesc]"
-    data "Icon" "Skill_Wizard_ArcaneRecovery"
-    data "Boost" "UnlockSpell(Shout_HarmoniousRecovery)"
-
 
     // Psi Point Cost //
 

@@ -2,27 +2,91 @@
 
     // Psi Point Cost //
 
-        new entry "Psion_PsiPointCost"
-        type "PassiveData"
-        data "DisplayName" "h465c7c80g8c66g4489gb557g936b84841143"
-        data "Description" "h6ea4dde0g063bg4dd6g9b02gc1b1202624e3"
-        data "Boosts" "IF(not HasStatus('CONSUMPTIVE_POWER')):UnlockSpellVariant(IsPsiSpell(), ModifyUseCosts(Add,PsiPointsResource,SpellPowerLevel,0),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyTooltipDescription())"
-        data "Icon" "Spell_Transmutation_Thaumaturgy"
+            new entry "Psion_PsiPointCost"
+            type "PassiveData"
+            data "DisplayName" "h465c7c80g8c66g4489gb557g936b84841143"
+            data "Description" "h6ea4dde0g063bg4dd6g9b02gc1b1202624e3"
+            data "Boosts" "IF(not HasStatus('CONSUMPTIVE_POWER')):UnlockSpellVariant(IsPsiSpell(), ModifyUseCosts(Add,PsiPointsResource,SpellPowerLevel,0),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyTooltipDescription())"
+            data "Icon" "Spell_Transmutation_Thaumaturgy"
 
         // Consumptive Power //
 
-        new entry "Psion_ConsumptivePower"
+            new entry "Psion_ConsumptivePower"
+            type "PassiveData"
+            data "DisplayName" "[HANDLEConsumptivePowerName]"
+            data "Description" "[HANDLEConsumptivePowerDesc]"
+            data "Icon" "Skill_Sorcerer_Passive_Metamagic_EmpoweredSpell"
+            data "Properties" "IsToggled;ToggledDefaultAddToHotbar"
+            data "ToggleOnFunctors" "ApplyStatus(CONSUMPTIVE_POWER, 100, -1);IF(not HasStatus('CONSUMPTIVE_POWER_MAX_HP')):ApplyStatus(CONSUMPTIVE_POWER_MAX_HP,100,-1)"
+            data "ToggleOffFunctors" "RemoveStatus(CONSUMPTIVE_POWER)"
+
+// Subclass Features
+
+    // Immortal Training //
+
+        new entry "Immortal_ImmortalTraining"
         type "PassiveData"
-        data "DisplayName" "[HANDLEConsumptivePowerName]"
-        data "Description" "[HANDLEConsumptivePowerDesc]"
-        data "Icon" "Skill_Sorcerer_Passive_Metamagic_EmpoweredSpell"
-        data "Properties" "IsToggled;ToggledDefaultAddToHotbar"
-        data "ToggleOnFunctors" "ApplyStatus(CONSUMPTIVE_POWER, 100, -1);IF(not HasStatus('CONSUMPTIVE_POWER_MAX_HP')):ApplyStatus(CONSUMPTIVE_POWER_MAX_HP,100,-1)"
-        data "ToggleOffFunctors" "RemoveStatus(CONSUMPTIVE_POWER)"
-        data "StatsFunctorContext" "OnCast"
-        data "StatsFunctors" "IncreaseMaxHP(50);IF(IsPsiSpell() and HasStatus(CONSUMPTIVE_POWER)):IncreaseMaxHP(-(SpellPowerLevel*2))"
+        data "DisplayName" "h4b77813cgf03cg457cgb88egcf7141dd03e3;2"
+        data "Description" "h815519e2g1a74g4015g96bdg2527961ede2b;2"
+        data "DescriptionParams" "ClassLevel(Psion)*2"
+        data "Icon" "PassiveFeature_Tough"
+        data "Boosts" "IncreaseMaxHP(ClassLevel(Psion))"
 
+    // Psionic Smite
+        new entry "Smite_Psionic"
+        type "PassiveData"
+        data "DisplayName" "[HANDLESmite_PsionicName]"
+        data "FormatColor" "Purple"
+        data "Properties" "IsHidden"
+        data "Boosts" "UnlockInterrupt(Interrupt_Smite_Psionic);UnlockInterrupt(Interrupt_Smite_Psionic_Critical)"
 
+        new entry "Smite_Psionic_2"
+        type "PassiveData"
+        using "Smite_Psionic"
+        data "Properties" "IsHidden"
+        data "Boosts" "UnlockInterrupt(Interrupt_Smite_Psionic_2);UnlockInterrupt(Interrupt_Smite_Psionic_Critical_2)"
+
+        new entry "Smite_Psionic_3"
+        type "PassiveData"
+        using "Smite_Psionic"
+        data "Properties" "IsHidden"
+        data "Boosts" "UnlockInterrupt(Interrupt_Smite_Psionic_3);UnlockInterrupt(Interrupt_Smite_Psionic_Critical_3)"
+
+        new entry "Smite_Psionic_4"
+        type "PassiveData"
+        using "Smite_Psionic"
+        data "Properties" "IsHidden"
+        data "Boosts" "UnlockInterrupt(Interrupt_Smite_Psionic_4);UnlockInterrupt(Interrupt_Smite_Psionic_Critical_4)"
+
+        new entry "Smite_Psionic_5"
+        type "PassiveData"
+        using "Smite_Psionic"
+        data "Properties" "IsHidden"
+        data "Boosts" "UnlockInterrupt(Interrupt_Smite_Psionic_5);UnlockInterrupt(Interrupt_Smite_Psionic_Critical_5)"
+
+    // Extra Attack
+    
+        new entry "SB_ExtraAttack_SpiritWarrior"
+        type "PassiveData"
+        using "ExtraAttack"
+        data "Description" "h76632ac5g8688g498egb870g096fbc1c2dd5;2"
+        data "Conditions" "(context.HasContextFlag(StatsFunctorContext.OnCast) and (ExtraAttackSpellCheck() or SB_SpiritWarrior_CantripCheckCheck()) and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source) and not HasStatus('SLAYER_PLAYER',context.Source) and not HasStatus('SLAYER_PLAYER_10',context.Source) and TurnBased(context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_TECHNICAL') and TurnBased()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('EXTRA_ATTACK_Q'))"
+
+        new entry "SB_ExtraAttack_SpiritWarrior2"
+        type "PassiveData"
+        data "DisplayName" "hcf90a672g10deg4b3egad4fg9094c6ac6224;1"
+        data "Properties" "IsHidden"
+        data "StatsFunctorContext" "OnCast;OnStatusRemoved;OnStatusApplied"
+        data "Conditions" "context.HasContextFlag(StatsFunctorContext.OnCast) and (SB_SpiritWarrior_CantripCheckCheck()) and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source)"
+        data "StatsFunctors" "ApplyStatus(SELF,SB_ExtraAttack_SpiritWarriorCantripUsed,100,1);"
+
+        new entry "SB_ExtraAttack_SpiritWarrior3"
+        type "PassiveData"
+        data "DisplayName" "hcf90a672g10deg4b3egad4fg9094c6ac6224;1"
+        data "Properties" "IsHidden"
+        data "StatsFunctorContext" "OnCast;OnStatusRemoved;OnStatusApplied"
+        data "Conditions" "HasStatus('EXTRA_ATTACK',context.Source) and not HasStatus('SB_ExtraAttack_SpiritWarriorCantripUsed',context.Source)"
+        data "StatsFunctors" "ApplyStatus(SELF,SB_ExtraAttack_SpiritWarriorCantripsExtra,100,1);"
 // Mental Talents
     // ~~~ CELERITY ~~~ //
 

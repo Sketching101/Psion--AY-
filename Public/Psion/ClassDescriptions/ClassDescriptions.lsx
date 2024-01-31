@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-  <version major="4" minor="0" revision="9" build="328" />
-  <region id="ClassDescriptions">
-    <node id="root">
-      <children>
-        <node id="ClassDescription"> Main Class
+    <version major="4" minor="0" revision="9" build="328" />
+    <region id="ClassDescriptions">
+        <node id="root">
+            <children>
+                <node id="ClassDescription"> Main Class
                     <attribute id="BaseHp" type="int32" value="6" /> Hit Die
                     <attribute id="CanLearnSpells" type="bool" value="false" />
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" /> 
                     <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Sorcerer" /> 
-					<attribute id="Description" type="TranslatedString" handle="h44603d09g9250g4d6bg8a7egd981cca2caf8" version="1" /> 
+                    <attribute id="Description" type="TranslatedString" handle="h44603d09g9250g4d6bg8a7egd981cca2caf8" version="1" /> 
                     <attribute id="DisplayName" type="TranslatedString" handle="he6eb02f6g1539g4c48g9dedg7f053bedaa16" version="1" />
                     <attribute id="HpPerLevel" type="int32" value="5" /> 
                     <attribute id="LearningStrategy" type="uint8" value="1" />
                     <attribute id="MustPrepareSpells" type="bool" value="false" /> 
                     <attribute id="Name" type="FixedString" value="Psion" /> 
-                    <attribute id="PrimaryAbility" type="uint8" value="6" /> 
+                    <attribute id="PrimaryAbility" type="uint8" value="4" /> 
                     <attribute id="ProgressionTableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" /> 
                     <attribute id="SoundClassType" type="FixedString" value="Sorcerer" /> Pick a class that your class would be the most similar to
                     <attribute id="SpellCastingAbility" type="uint8" value="4" /> 
-					<attribute id="SpellList" type="guid" value="beb9389e-24f8-49b0-86a5-e8d08b6fdc2e" /> 
+                    <attribute id="SpellList" type="guid" value="beb9389e-24f8-49b0-86a5-e8d08b6fdc2e" /> 
                     <attribute id="UUID" type="guid" value="ff4e82b6-16ef-47cf-a64e-478541157551" /> 
-					<children>
+                    <children>
                         <node id="Tags">
                             <attribute id="Object" type="guid" value="dc8a847f-77b0-4dbb-a564-1ded034a1976"/> Mystic tag for scripting
                         </node>
@@ -33,7 +33,22 @@
                         </node>
                     </children>
                 </node>
-      </children>
-    </node>
-  </region>
+                
+                <node id="ClassDescription"> Immortal
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+                    <attribute id="Description" type="TranslatedString" handle="[HANDLEImmortalDesc]" version="2" />
+                    <attribute id="DisplayName" type="TranslatedString" handle="[HANDLEImmortalName]" version="1" />
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Ranger" />
+                    <attribute id="LearningStrategy" type="uint8" value="1" />
+                    <attribute id="Name" type="FixedString" value="PsionImmortal" />
+                    <attribute id="ParentGuid" type="guid" value="ff4e82b6-16ef-47cf-a64e-478541157551" />
+                    <attribute id="PrimaryAbility" type="uint8" value="4" />
+                    <attribute id="ProgressionTableUUID" type="guid" value="acd89867-3d0f-4e6d-9a7a-d663e8449025" />
+                    <attribute id="SoundClassType" type="FixedString" value="Ranger" />
+                    <attribute id="SpellCastingAbility" type="uint8" value="4" />
+                    <attribute id="UUID" type="guid" value="932d09ad-8192-4103-bc39-b7a088c0bf09" />
+                </node>
+            </children>
+        </node>
+    </region>
 </save>

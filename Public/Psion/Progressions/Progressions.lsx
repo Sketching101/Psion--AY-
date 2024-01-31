@@ -15,15 +15,15 @@
                     <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(9deea502-bdaa-4462-b22b-d345d6dd3957,2);SelectSpells(b10535d8-1650-45cb-9308-842403b654b0,2,0,,,,AlwaysPrepared);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
 					<attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                     <attribute id="UUID" type="guid" value="77f4a196-3ae9-4d6f-a4e5-63ed4db7ac54" />
-					<!-- <children>
+					<children>
                         <node id="SubClasses"> @TODO: Add appropriate subclasses
                             <children>
                                 <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="[SUBCLASSUUID]" /> Avatar
+                                    <attribute id="Object" type="guid" value="932d09ad-8192-4103-bc39-b7a088c0bf09" /> Immortal
                                 </node>
                             </children>
                         </node>
-                    </children> -->
+                    </children>
                 </node>
                 <node id="Progression"> Psion Multiclass
                     <attribute id="AllowImprovement" type="bool" value="false" />
@@ -37,15 +37,15 @@
                     <attribute id="Selectors" type="LSString" value="SelectSpells(b10535d8-1650-45cb-9308-842403b654b0,2,0,,,,AlwaysPrepared);SelectSpells(3d81d2f7-e498-402a-9e05-1ec90f408041,2,0,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                     <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                     <attribute id="UUID" type="guid" value="60c46460-e719-4f3f-975a-fd6c4cb0365e" />
-                    <!-- <children>
+                    <children>
                         <node id="SubClasses">
                             <children>
                                 <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="[SUBCLASSUUID]" /> Avatar
+                                    <attribute id="Object" type="guid" value="932d09ad-8192-4103-bc39-b7a088c0bf09" /> Immortal
                                 </node>
                             </children>
                         </node>
-                    </children> -->
+                    </children>
                 </node>
                 <node id="Progression"> Psion Level 2
                         <attribute id="AllowImprovement" type="bool" value="false" />
@@ -178,6 +178,96 @@
                         <attribute id="Selectors" type="LSString" value="SelectSpells(8a13f7df-8aef-4762-91c9-1aa87e77bc80,0,1,,,b667277c-98b8-46ad-9556-f0838c7e1c02)" />
                         <attribute id="TableUUID" type="guid" value="35ab23cc-5ae7-4273-b3e8-13c21d66b525" />
                         <attribute id="UUID" type="guid" value="26221d03-f7d2-49ae-a7d2-5aeaa385099a" />
+                </node>
+
+                
+                <node id="Progression"> Immortal Level 1
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="PsionImmortal" />
+                    <attribute id="Boosts" type="LSString" value="Proficiency(MartialWeapons)" />
+                    <attribute id="PassivesAdded" type="LSString" value="Immortal_ImmortalTraining" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(688e8aa1-4656-4857-8e4c-13a0f8561492);" />
+                    <attribute id="TableUUID" type="guid" value="acd89867-3d0f-4e6d-9a7a-d663e8449025" />
+                    <attribute id="UUID" type="guid" value="b61a8004-0fdd-49f7-89b7-b48577d7b9a8" />
+                </node>
+                <node id="Progression"> Immortal Level 3
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="PsionImmortal" />
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="PassivesAdded" type="LSString" value="Smite_Divine" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b7b5f4db-c9cc-4e0c-97d8-d8d8135599c3);" />
+                    <attribute id="TableUUID" type="guid" value="acd89867-3d0f-4e6d-9a7a-d663e8449025" />
+                    <attribute id="UUID" type="guid" value="3c7c5731-a8d7-4880-975f-27e2d2128637" />
+                </node>
+                <node id="Progression"> Immortal Level 5
+                    <attribute id="Level" type="uint8" value="5" />
+                    <attribute id="Name" type="LSString" value="PsionImmortal" />
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(79162c0d-2fda-408d-a0f7-6b7fdb8e9840);" />
+                    <attribute id="TableUUID" type="guid" value="acd89867-3d0f-4e6d-9a7a-d663e8449025" />
+                    <attribute id="UUID" type="guid" value="c87bd721-627f-42f8-abf4-ab9245eebaa7" />
+                </node>
+                <node id="Progression"> Immortal Level 6
+                    <attribute id="Level" type="uint8" value="6" />
+                    <attribute id="Name" type="LSString" value="PsionImmortal" />
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells();" />
+                    <attribute id="TableUUID" type="guid" value="acd89867-3d0f-4e6d-9a7a-d663e8449025" />
+                    <attribute id="UUID" type="guid" value="60af1f2a-2bb5-458c-b304-b7577a7bbb5e" />
+                </node>
+                <node id="Progression"> Immortal Level 7
+                    <attribute id="Level" type="uint8" value="7" />
+                    <attribute id="Name" type="LSString" value="PsionImmortal" />
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(04cd9f98-c96a-4979-b50b-cc985763aed9);" />
+                    <attribute id="TableUUID" type="guid" value="acd89867-3d0f-4e6d-9a7a-d663e8449025" />
+                    <attribute id="UUID" type="guid" value="4f8d8dbd-d217-4617-aacd-1347b1060f92" />
+                </node>
+                <node id="Progression"> Immortal Level 9
+                    <attribute id="Level" type="uint8" value="9" />
+                    <attribute id="Name" type="LSString" value="PsionImmortal" />
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(f19f38fb-f9b6-4580-9ed2-3bbc21d1b7c2);" />
+                    <attribute id="TableUUID" type="guid" value="acd89867-3d0f-4e6d-9a7a-d663e8449025" />
+                    <attribute id="UUID" type="guid" value="6b20e5f5-6259-4e59-b300-9577f07d7ef8" />
+                </node>
+                <node id="Progression"> Immortal Level 14
+                    <attribute id="Level" type="uint8" value="14" />
+                    <attribute id="Name" type="LSString" value="PsionImmortal" />
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells();" />
+                    <attribute id="TableUUID" type="guid" value="acd89867-3d0f-4e6d-9a7a-d663e8449025" />
+                    <attribute id="UUID" type="guid" value="8bdbe8ab-0130-4a27-9850-9c26686c657b" />
+                </node>
+                <node id="Progression"> Immortal Level 18
+                    <attribute id="Level" type="uint8" value="18" />
+                    <attribute id="Name" type="LSString" value="PsionImmortal" />
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells();" />
+                    <attribute id="TableUUID" type="guid" value="acd89867-3d0f-4e6d-9a7a-d663e8449025" />
+                    <attribute id="UUID" type="guid" value="fc067186-3aa6-4758-804c-0d414e8568f5" />
                 </node>
             </children>
         </node>

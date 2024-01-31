@@ -3,3 +3,17 @@ local __util = require 'larian.util'
 function IsPsiSpell()
     return HasSpellFlag(SpellFlags.Spell) & (HasUseCosts('SpellSlot') | HasUseCosts('PsionSpellSlot'))
 end
+
+
+function IsPsionicSmite()
+    return SpellId('Target_Smite_Psionic') | SpellId('Target_Smite_Psionic_2') | SpellId('Target_Smite_Psionic_3') | SpellId('Target_Smite_Psionic_4') | SpellId('Target_Smite_Psionic_5') | SpellId('Target_Smite_Psionic_6')
+end
+
+function IsPsionicSmiteWeaponAttack()
+    result = context.HitDescription.AttackType == AttackType.RangedWeaponAttack
+    or context.HitDescription.AttackType == AttackType.MeleeWeaponAttack
+    or context.HitDescription.AttackType == AttackType.RangedOffHandWeaponAttack
+    or context.HitDescription.AttackType == AttackType.MeleeOffHandWeaponAttack
+    or context.HitDescription.AttackType == AttackType.MeleeUnarmedAttack
+	return ConditionResult(result)
+end

@@ -44,6 +44,32 @@
             <attribute id="Spells" type="LSString" value="Shout_HarmoniousRecovery"/>
             <attribute id="UUID" type="guid" value="ce4feca3-dce1-465e-8acf-99d43acb5931"/>
         </node>
+
+        <node id="SpellList"> Immortal Level 1 Spell
+            <attribute id="Comment" type="LSString" value="Immortal Level 1 Spell"/>
+            <attribute id="Spells" type="LSString" value="Target_Jump;Shout_EsotericProficiency"/>
+            <attribute id="UUID" type="guid" value="688e8aa1-4656-4857-8e4c-13a0f8561492"/>
+        </node>
+        <node id="SpellList"> Immortal Level 3 Spell
+            <attribute id="Comment" type="LSString" value="Immortal Level 3 Spell"/>
+            <attribute id="Spells" type="LSString" value="Shout_Blur"/>
+            <attribute id="UUID" type="guid" value="b7b5f4db-c9cc-4e0c-97d8-d8d8135599c3"/>
+        </node>
+        <node id="SpellList"> Immortal Level 5 Spell
+            <attribute id="Comment" type="LSString" value="Immortal Level 5 Spell"/>
+            <attribute id="Spells" type="LSString" value="Target_Haste"/>
+            <attribute id="UUID" type="guid" value="79162c0d-2fda-408d-a0f7-6b7fdb8e9840"/>
+        </node>
+        <node id="SpellList"> Immortal Level 7 Spell
+            <attribute id="Comment" type="LSString" value="Immortal Level 7 Spell"/>
+            <attribute id="Spells" type="LSString" value="Target_FreedomOfMovement"/>
+            <attribute id="UUID" type="guid" value="04cd9f98-c96a-4979-b50b-cc985763aed9"/>
+        </node>
+        <node id="SpellList"> Immortal Level 9 Spell (5eSpells)
+            <attribute id="Comment" type="LSString" value="Immortal Level 9 Spell"/>
+            <attribute id="Spells" type="LSString" value="Target_SteelWindStrike"/>
+            <attribute id="UUID" type="guid" value="f19f38fb-f9b6-4580-9ed2-3bbc21d1b7c2"/>
+        </node>
       </children>
     </node>
   </region>

@@ -1,3 +1,43 @@
+// Spell Effects
+    // Tower of Iron Will
+        new entry "TOWER_OF_IRON_WILL"
+        type "StatusData"
+        data "StatusType" "BOOST"
+        data "DisplayName" "[HANDLETOWER_OF_IRON_WILLName]"
+        data "Icon" "PassiveFeature_BardicInspiration_SavingThrow"
+        data "StackId" "TOWER_OF_IRON_WILL"
+        data "TickType" "StartTurn"
+        data "Boosts" "Advantage(SavingThrow,Intelligence);Advantage(SavingThrow,Wisdom);Advantage(SavingThrow,Charisma);Resistance(Psychic,Resistant)"
+        data "StatusGroups" "SG_RemoveOnRespec"
+
+    // Ego Scourge
+        new entry "EGO_SCOURGE"
+        type "StatusData"
+        data "StatusType" "BOOST"
+        data "DisplayName" "[HANDLEEGO_SCOURGEName]"
+        data "Icon" "Spell_Enchantment_Confusion"
+        data "StackId" "EGO_SCOURGE"
+        data "OnTickRoll" "SavingThrow(Ability.Intelligence, SourceSpellDC())"
+        data "OnTickSuccess" "RemoveStatus(EGO_SCOURGE)"
+        data "TickType" "EndTurn"
+        data "Boosts" "Disadvantage(AttackRoll);Disdvantage(AllAbilities);BlockSpellCast()"
+        data "StatusGroups" "SG_RemoveOnRespec"
+
+    // Psychic Crush
+        new entry "PSYCHIC_CRUSH"
+        type "StatusData"
+        data "StatusType" "BOOST"
+        data "DisplayName" "[HANDLEPSYCHIC_CRUSHName]"
+        data "Icon" "Spell_Enchantment_DominatePerson"
+        data "StackId" "EGO_SCOURGE"
+        data "OnTickRoll" "SavingThrow(Ability.Strength, SourceSpellDC())"
+        data "OnTickSuccess" "RemoveStatus(PSYCHIC_CRUSH)"
+        data "OnTickFail" "DealDamage(2d8,Force)"
+        data "TickType" "EndTurn"
+        data "StatusGroups" "SG_RemoveOnRespec"
+
+
+
 // Class Features
 
     // Consumptive Power
